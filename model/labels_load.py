@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 # 从PDB中读取seq数据（经过onehot处理）和结构数据，json中只用到了GO数据
 # 这里的文件并不重要，你只需要导入将数据处理为一个字典，格式为 {"P01283":["GO:0002312","GO:0202312",...], }即可
-with open("/mnt/workspace/replicate/Struct2GO/processed_data/HUMAN_protein_info.json","r") as f:
+with open("processed_data/HUMAN_protein_info.json","r") as f:
     labels = json.load(f)
 '''
 labels={}
@@ -32,7 +32,7 @@ part=collections.defaultdict(list)
 # 边的方向：A is_a B  <=>  A -> B
 # 同样，这里的文件也不重要，可以在Gene Ontology上下载
 print("--------------1: go term processing")
-with open('/mnt/workspace/replicate/Struct2GO/raw_data/go.obo','r') as fin:
+with open('raw_data/go.obo','r') as fin:
     for line in fin:
         if '[Typedef]' in line:
             break
@@ -85,7 +85,7 @@ print("protein_num:",len(labels),"->",len(pro_with_go))
 
 print("--------------3: split protein set")
 # TODO: 需要统一文件夹路径
-df=pd.read_csv("/mnt/workspace/replicate/Struct2GO/data/protein_list.csv",sep=" ")
+df=pd.read_csv("data/protein_list.csv",sep=" ")
 tmp_list=df.values.tolist()
 protein_list=[]
 for i in tmp_list:
@@ -110,24 +110,24 @@ for i in pro_with_go:
 
 print("--------------4: read all kinds of features")
 # 处理蛋白质氨基酸序列的独热编码
-with open('../processed_data/protein_node2onehot','rb')as f:
+with open('processed_data/protein_node2onehot','rb')as f:
     protein_node2onehot = pickle.load(f)
     print("protein_node2onehot:",len(protein_node2onehot))
 # 处理蛋白质氨基酸序列的node2vec编码 (论文方法)
-with open('/mnt/workspace/replicate/Struct2GO/processed_data/protein_node2vec','rb')as f:
+with open('processed_data/protein_node2vec','rb')as f:
     protein_node2vec = pickle.load(f)
 print("protein_node2vec:",len(protein_node2vec))
 
 
 # 处理蛋白质氨基酸序列的SeqVec特征
-with open('/mnt/workspace/replicate/Struct2GO/processed_data/dict_sequence_feature','rb')as f:
+with open('processed_data/dict_sequence_feature','rb')as f:
     seqvec_feature_dic = pickle.load(f)
 print("seqvec_feature_dic:",len(seqvec_feature_dic))
 
 # 处理蛋白质的结构信息
 graph_dic = {}
 # 读取predicted_protein_struct2map.py处理出来的protein_edges
-for path,dir_list,file_list in os.walk("/mnt/workspace/replicate/Struct2GO/data/protein_contact_map"):
+for path,dir_list,file_list in os.walk("data/protein_contact_map"):
     for file_name in file_list: 
         trace = os.path.join(path, file_name)
         name = file_name.split(".")[0]
@@ -178,7 +178,7 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
     # 第二步：对筛选出来的go_term进行编号
     print("----step 2----")
     term2idx=goterm2idx(final_go)
-    with open('/mnt/workspace/replicate/Struct2GO/processed_data/'+ns_type+'_term2idx.json','w') as f:
+    with open('processed_data/'+ns_type+'_term2idx.json','w') as f:
         json.dump(term2idx,f,indent=4)
 
     # 第三步：求出每个蛋白质的功能标签序列对应的multihot向量, 并且把label筛选一遍
@@ -201,7 +201,7 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
     plt.ylabel('GO term Number')
     plt.title(ns_type+'-go')
     plt.legend(loc='upper right')  # 显示图例
-    plt.savefig('/mnt/workspace/replicate/Struct2GO/processed_data/histogram_'+ns_type+'.png', format='png')
+    plt.savefig('processed_data/histogram_'+ns_type+'.png', format='png')
     # plt.show()
 
     # 将字典转换为一对一的键值对
@@ -209,7 +209,7 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
     # 创建DataFrame
     df = pd.DataFrame(pairs, columns=['Protein', ns_type+'-go'])
     # 保存为CSV文件
-    df.to_csv('/mnt/workspace/replicate/Struct2GO/processed_data/gos_'+ns_type+'.csv', index=False)
+    df.to_csv('processed_data/gos_'+ns_type+'.csv', index=False)
 
     # 第五步：输出完成处理之后的数据
     print("----step 5----")
@@ -218,6 +218,8 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
     emb_label = {}
     for i in tqdm(final_protein_list):
         # 构建蛋白质结构图，氨基酸作为节点，读取节点特征
+        if i not in seq_feature_dic:
+            continue
         edges_data = graph_dic.get(i)
         src = edges_data['Src'].to_numpy()
         dst = edges_data['Dst'].to_numpy()
@@ -240,11 +242,11 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
         emb_graph[i] = g
         emb_label[i] = multihot_go
     print(ns_type,"dataset size:",len(emb_graph))
-    with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_graph_'+ns_type,'wb')as f:
+    with open('processed_data/emb_graph_'+ns_type,'wb')as f:
         pickle.dump(emb_graph,f)
-    with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_seq_feature_'+ns_type,'wb')as f:
+    with open('processed_data/emb_seq_feature_'+ns_type,'wb')as f:
         pickle.dump(emb_seq_feature,f)
-    with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_label_'+ns_type,'wb')as f:
+    with open('processed_data/emb_label_'+ns_type,'wb')as f:
         pickle.dump(emb_label,f)
     
     # 第六步：输出GO graph
@@ -262,7 +264,7 @@ def label_process(label,graph_node_feature_dic,protein_node2onehot,seq_feature_d
                     parent_idx = term_to_idx[parent]
                     go_graph.add_edges(torch.tensor([child_idx]), torch.tensor([parent_idx]))
 
-    with open('/mnt/workspace/replicate/Struct2GO/processed_data/label_'+ns_type+'_network','wb')as f:
+    with open('processed_data/label_'+ns_type+'_network','wb')as f:
         pickle.dump(go_graph,f)  
 
 print("--------------5: process all kinds of files")

@@ -1,0 +1,335 @@
+2026-05-25 04:55:34,848 mf_transformer_v1 INFO #########mf###########
+2026-05-25 04:55:34,848 mf_transformer_v1 INFO ########start training###########
+2026-05-25 04:55:34,848 mf_transformer_v1 INFO epoch: 0
+2026-05-25 04:55:34,849 mf_transformer_v1 INFO training
+2026-05-25 05:00:11,468 mf_transformer_v1 INFO #########mf###########
+2026-05-25 05:00:11,468 mf_transformer_v1 INFO ########start training###########
+2026-05-25 05:00:11,468 mf_transformer_v1 INFO epoch: 0
+2026-05-25 05:00:11,469 mf_transformer_v1 INFO training
+2026-05-25 05:00:17,996 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 29 / 347, Loss(batch): 67.2968521118164
+2026-05-25 05:00:23,675 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 59 / 347, Loss(batch): 45.1624641418457
+2026-05-25 05:00:29,253 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 89 / 347, Loss(batch): 58.152862548828125
+2026-05-25 05:00:34,737 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 119 / 347, Loss(batch): 56.94120788574219
+2026-05-25 05:00:39,986 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 149 / 347, Loss(batch): 72.13334655761719
+2026-05-25 05:00:45,479 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 179 / 347, Loss(batch): 71.70555114746094
+2026-05-25 05:00:50,786 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 209 / 347, Loss(batch): 54.21009063720703
+2026-05-25 05:00:56,220 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 239 / 347, Loss(batch): 44.38806915283203
+2026-05-25 05:01:01,875 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 269 / 347, Loss(batch): 49.877166748046875
+2026-05-25 05:01:07,047 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 299 / 347, Loss(batch): 54.663604736328125
+2026-05-25 05:01:12,539 mf_transformer_v1 INFO Epoch: 0 / 20, Step: 329 / 347, Loss(batch): 42.31263732910156
+2026-05-25 05:01:15,506 mf_transformer_v1 INFO epoch: 1
+2026-05-25 05:01:15,507 mf_transformer_v1 INFO training
+2026-05-25 05:01:20,366 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 29 / 347, Loss(batch): 45.376285552978516
+2026-05-25 05:01:25,321 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 59 / 347, Loss(batch): 56.03322219848633
+2026-05-25 05:01:30,437 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 89 / 347, Loss(batch): 52.4416389465332
+2026-05-25 05:01:35,483 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 119 / 347, Loss(batch): 41.60327911376953
+2026-05-25 05:01:40,327 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 149 / 347, Loss(batch): 63.572731018066406
+2026-05-25 05:01:45,036 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 179 / 347, Loss(batch): 55.89781188964844
+2026-05-25 05:01:49,927 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 209 / 347, Loss(batch): 56.36570739746094
+2026-05-25 05:01:55,005 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 239 / 347, Loss(batch): 43.96940612792969
+2026-05-25 05:02:00,103 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 269 / 347, Loss(batch): 48.0313720703125
+2026-05-25 05:02:04,963 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 299 / 347, Loss(batch): 54.38932418823242
+2026-05-25 05:02:10,346 mf_transformer_v1 INFO Epoch: 1 / 20, Step: 329 / 347, Loss(batch): 56.754058837890625
+2026-05-25 05:02:13,309 mf_transformer_v1 INFO epoch: 2
+2026-05-25 05:02:13,310 mf_transformer_v1 INFO training
+2026-05-25 05:02:18,664 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 29 / 347, Loss(batch): 57.37311553955078
+2026-05-25 05:02:23,773 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 59 / 347, Loss(batch): 46.764732360839844
+2026-05-25 05:02:28,810 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 89 / 347, Loss(batch): 52.8760986328125
+2026-05-25 05:02:34,023 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 119 / 347, Loss(batch): 43.256229400634766
+2026-05-25 05:02:39,299 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 149 / 347, Loss(batch): 42.95741271972656
+2026-05-25 05:02:44,582 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 179 / 347, Loss(batch): 47.439971923828125
+2026-05-25 05:02:49,742 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 209 / 347, Loss(batch): 58.624908447265625
+2026-05-25 05:02:54,819 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 239 / 347, Loss(batch): 55.19538116455078
+2026-05-25 05:02:59,499 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 269 / 347, Loss(batch): 47.70976257324219
+2026-05-25 05:03:04,204 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 299 / 347, Loss(batch): 38.65876007080078
+2026-05-25 05:03:08,791 mf_transformer_v1 INFO Epoch: 2 / 20, Step: 329 / 347, Loss(batch): 40.600101470947266
+2026-05-25 05:03:11,368 mf_transformer_v1 INFO epoch: 3
+2026-05-25 05:03:11,369 mf_transformer_v1 INFO training
+2026-05-25 05:03:16,528 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 29 / 347, Loss(batch): 49.42268371582031
+2026-05-25 05:03:21,707 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 59 / 347, Loss(batch): 45.29307556152344
+2026-05-25 05:03:26,876 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 89 / 347, Loss(batch): 43.96879959106445
+2026-05-25 05:03:31,813 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 119 / 347, Loss(batch): 54.89071273803711
+2026-05-25 05:03:36,417 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 149 / 347, Loss(batch): 51.81846618652344
+2026-05-25 05:03:41,130 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 179 / 347, Loss(batch): 42.82291793823242
+2026-05-25 05:03:45,920 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 209 / 347, Loss(batch): 50.38190460205078
+2026-05-25 05:03:50,524 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 239 / 347, Loss(batch): 57.70795440673828
+2026-05-25 05:03:55,110 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 269 / 347, Loss(batch): 49.95608901977539
+2026-05-25 05:03:59,694 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 299 / 347, Loss(batch): 55.002052307128906
+2026-05-25 05:04:04,266 mf_transformer_v1 INFO Epoch: 3 / 20, Step: 329 / 347, Loss(batch): 36.983642578125
+2026-05-25 05:04:06,845 mf_transformer_v1 INFO validating
+2026-05-25 05:04:07,864 mf_transformer_v1 INFO Valid Step: 9 / 99, Loss(batch): 82.6166000366211
+2026-05-25 05:04:08,840 mf_transformer_v1 INFO Valid Step: 19 / 99, Loss(batch): 56.30563735961914
+2026-05-25 05:04:09,811 mf_transformer_v1 INFO Valid Step: 29 / 99, Loss(batch): 75.5318603515625
+2026-05-25 05:04:10,738 mf_transformer_v1 INFO Valid Step: 39 / 99, Loss(batch): 53.545230865478516
+2026-05-25 05:04:11,667 mf_transformer_v1 INFO Valid Step: 49 / 99, Loss(batch): 51.75947952270508
+2026-05-25 05:04:12,588 mf_transformer_v1 INFO Valid Step: 59 / 99, Loss(batch): 53.770294189453125
+2026-05-25 05:04:13,529 mf_transformer_v1 INFO Valid Step: 69 / 99, Loss(batch): 67.94581604003906
+2026-05-25 05:04:14,452 mf_transformer_v1 INFO Valid Step: 79 / 99, Loss(batch): 60.770721435546875
+2026-05-25 05:04:15,382 mf_transformer_v1 INFO Valid Step: 89 / 99, Loss(batch): 68.23119354248047
+2026-05-25 05:08:30,082 mf_transformer_v1 INFO ########valid metric###########
+2026-05-25 05:08:30,082 mf_transformer_v1 INFO epoch3, train_loss49.50830516760219, valid_loss:65.12166553073459
+2026-05-25 05:08:30,082 mf_transformer_v1 INFO threshold:0.94, f_score0.5440076018529516, auc0.9339102276830165, recall0.5239075726378403, precision0.5657114624505929, aupr0.5559384552853817
+2026-05-25 05:08:30,083 mf_transformer_v1 INFO epoch: 4
+2026-05-25 05:08:30,083 mf_transformer_v1 INFO training
+2026-05-25 05:08:35,019 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 29 / 347, Loss(batch): 50.04557800292969
+2026-05-25 05:08:40,203 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 59 / 347, Loss(batch): 50.03577423095703
+2026-05-25 05:08:45,445 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 89 / 347, Loss(batch): 45.91007995605469
+2026-05-25 05:08:50,299 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 119 / 347, Loss(batch): 61.06596374511719
+2026-05-25 05:08:54,884 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 149 / 347, Loss(batch): 47.977962493896484
+2026-05-25 05:08:59,465 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 179 / 347, Loss(batch): 45.390892028808594
+2026-05-25 05:09:04,085 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 209 / 347, Loss(batch): 59.158329010009766
+2026-05-25 05:09:08,371 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 239 / 347, Loss(batch): 45.003273010253906
+2026-05-25 05:09:13,333 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 269 / 347, Loss(batch): 44.46561813354492
+2026-05-25 05:09:18,084 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 299 / 347, Loss(batch): 42.24130630493164
+2026-05-25 05:09:22,644 mf_transformer_v1 INFO Epoch: 4 / 20, Step: 329 / 347, Loss(batch): 52.37770080566406
+2026-05-25 05:09:25,217 mf_transformer_v1 INFO epoch: 5
+2026-05-25 05:09:25,218 mf_transformer_v1 INFO training
+2026-05-25 05:09:29,727 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 29 / 347, Loss(batch): 51.508575439453125
+2026-05-25 05:09:34,311 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 59 / 347, Loss(batch): 40.52305221557617
+2026-05-25 05:09:38,874 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 89 / 347, Loss(batch): 49.8050651550293
+2026-05-25 05:09:43,427 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 119 / 347, Loss(batch): 59.063838958740234
+2026-05-25 05:09:48,001 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 149 / 347, Loss(batch): 54.13580322265625
+2026-05-25 05:09:52,562 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 179 / 347, Loss(batch): 48.434730529785156
+2026-05-25 05:09:57,352 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 209 / 347, Loss(batch): 51.25853729248047
+2026-05-25 05:10:02,271 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 239 / 347, Loss(batch): 51.87492370605469
+2026-05-25 05:10:07,038 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 269 / 347, Loss(batch): 49.2726936340332
+2026-05-25 05:10:11,460 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 299 / 347, Loss(batch): 59.400726318359375
+2026-05-25 05:10:15,687 mf_transformer_v1 INFO Epoch: 5 / 20, Step: 329 / 347, Loss(batch): 42.253326416015625
+2026-05-25 05:10:18,059 mf_transformer_v1 INFO epoch: 6
+2026-05-25 05:10:18,060 mf_transformer_v1 INFO training
+2026-05-25 05:10:22,473 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 29 / 347, Loss(batch): 38.50383758544922
+2026-05-25 05:10:26,670 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 59 / 347, Loss(batch): 48.0866584777832
+2026-05-25 05:10:31,136 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 89 / 347, Loss(batch): 43.71947479248047
+2026-05-25 05:10:36,150 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 119 / 347, Loss(batch): 43.38851547241211
+2026-05-25 05:10:41,208 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 149 / 347, Loss(batch): 57.50267028808594
+2026-05-25 05:10:46,171 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 179 / 347, Loss(batch): 49.157108306884766
+2026-05-25 05:10:51,556 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 209 / 347, Loss(batch): 49.81752014160156
+2026-05-25 05:10:56,607 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 239 / 347, Loss(batch): 51.310630798339844
+2026-05-25 05:11:01,554 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 269 / 347, Loss(batch): 41.77739334106445
+2026-05-25 05:11:06,398 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 299 / 347, Loss(batch): 39.045494079589844
+2026-05-25 05:11:11,228 mf_transformer_v1 INFO Epoch: 6 / 20, Step: 329 / 347, Loss(batch): 47.857967376708984
+2026-05-25 05:11:14,015 mf_transformer_v1 INFO epoch: 7
+2026-05-25 05:11:14,017 mf_transformer_v1 INFO training
+2026-05-25 05:11:18,756 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 29 / 347, Loss(batch): 43.55738830566406
+2026-05-25 05:11:23,506 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 59 / 347, Loss(batch): 66.18119049072266
+2026-05-25 05:11:28,258 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 89 / 347, Loss(batch): 41.694637298583984
+2026-05-25 05:11:33,085 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 119 / 347, Loss(batch): 56.285614013671875
+2026-05-25 05:11:38,001 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 149 / 347, Loss(batch): 34.67292785644531
+2026-05-25 05:11:42,990 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 179 / 347, Loss(batch): 41.45726013183594
+2026-05-25 05:11:47,817 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 209 / 347, Loss(batch): 57.83099365234375
+2026-05-25 05:11:52,827 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 239 / 347, Loss(batch): 46.705589294433594
+2026-05-25 05:11:57,702 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 269 / 347, Loss(batch): 46.86883544921875
+2026-05-25 05:12:02,824 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 299 / 347, Loss(batch): 36.59588623046875
+2026-05-25 05:12:07,642 mf_transformer_v1 INFO Epoch: 7 / 20, Step: 329 / 347, Loss(batch): 51.49264144897461
+2026-05-25 05:12:10,334 mf_transformer_v1 INFO validating
+2026-05-25 05:12:11,358 mf_transformer_v1 INFO Valid Step: 9 / 99, Loss(batch): 66.40939331054688
+2026-05-25 05:12:12,662 mf_transformer_v1 INFO Valid Step: 19 / 99, Loss(batch): 55.00102233886719
+2026-05-25 05:12:13,792 mf_transformer_v1 INFO Valid Step: 29 / 99, Loss(batch): 56.44102478027344
+2026-05-25 05:12:14,838 mf_transformer_v1 INFO Valid Step: 39 / 99, Loss(batch): 55.84611511230469
+2026-05-25 05:12:15,876 mf_transformer_v1 INFO Valid Step: 49 / 99, Loss(batch): 65.30824279785156
+2026-05-25 05:12:16,998 mf_transformer_v1 INFO Valid Step: 59 / 99, Loss(batch): 56.663360595703125
+2026-05-25 05:12:18,085 mf_transformer_v1 INFO Valid Step: 69 / 99, Loss(batch): 84.35814666748047
+2026-05-25 05:12:19,208 mf_transformer_v1 INFO Valid Step: 79 / 99, Loss(batch): 65.72000885009766
+2026-05-25 05:12:20,423 mf_transformer_v1 INFO Valid Step: 89 / 99, Loss(batch): 64.0241470336914
+2026-05-25 05:16:36,503 mf_transformer_v1 INFO ########valid metric###########
+2026-05-25 05:16:36,504 mf_transformer_v1 INFO epoch7, train_loss47.2045000939273, valid_loss:64.53801908396711
+2026-05-25 05:16:36,505 mf_transformer_v1 INFO threshold:0.95, f_score0.6049880962990312, auc0.9451563902078797, recall0.6039807824296499, precision0.605998775760049, aupr0.5918355944756188
+2026-05-25 05:16:36,505 mf_transformer_v1 INFO epoch: 8
+2026-05-25 05:16:36,506 mf_transformer_v1 INFO training
+2026-05-25 05:16:41,818 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 29 / 347, Loss(batch): 55.394561767578125
+2026-05-25 05:16:46,787 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 59 / 347, Loss(batch): 46.722015380859375
+2026-05-25 05:16:51,780 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 89 / 347, Loss(batch): 46.394775390625
+2026-05-25 05:16:56,851 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 119 / 347, Loss(batch): 54.91912078857422
+2026-05-25 05:17:01,762 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 149 / 347, Loss(batch): 43.00541305541992
+2026-05-25 05:17:06,720 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 179 / 347, Loss(batch): 40.75444030761719
+2026-05-25 05:17:11,700 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 209 / 347, Loss(batch): 41.55927276611328
+2026-05-25 05:17:16,452 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 239 / 347, Loss(batch): 42.025794982910156
+2026-05-25 05:17:21,217 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 269 / 347, Loss(batch): 50.5513801574707
+2026-05-25 05:17:25,946 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 299 / 347, Loss(batch): 35.947021484375
+2026-05-25 05:17:30,852 mf_transformer_v1 INFO Epoch: 8 / 20, Step: 329 / 347, Loss(batch): 39.448280334472656
+2026-05-25 05:17:33,533 mf_transformer_v1 INFO epoch: 9
+2026-05-25 05:17:33,534 mf_transformer_v1 INFO training
+2026-05-25 05:17:38,148 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 29 / 347, Loss(batch): 55.123836517333984
+2026-05-25 05:17:42,801 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 59 / 347, Loss(batch): 57.50282287597656
+2026-05-25 05:17:47,454 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 89 / 347, Loss(batch): 47.079345703125
+2026-05-25 05:17:52,154 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 119 / 347, Loss(batch): 43.89567184448242
+2026-05-25 05:17:56,795 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 149 / 347, Loss(batch): 40.750205993652344
+2026-05-25 05:18:01,467 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 179 / 347, Loss(batch): 46.79271697998047
+2026-05-25 05:18:06,341 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 209 / 347, Loss(batch): 54.07500076293945
+2026-05-25 05:18:11,009 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 239 / 347, Loss(batch): 33.82334899902344
+2026-05-25 05:18:15,691 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 269 / 347, Loss(batch): 33.815406799316406
+2026-05-25 05:18:20,348 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 299 / 347, Loss(batch): 39.94362258911133
+2026-05-25 05:18:25,003 mf_transformer_v1 INFO Epoch: 9 / 20, Step: 329 / 347, Loss(batch): 49.54806137084961
+2026-05-25 05:18:27,647 mf_transformer_v1 INFO epoch: 10
+2026-05-25 05:18:27,648 mf_transformer_v1 INFO training
+2026-05-25 05:18:32,264 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 29 / 347, Loss(batch): 44.49734115600586
+2026-05-25 05:18:36,928 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 59 / 347, Loss(batch): 53.46575164794922
+2026-05-25 05:18:41,638 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 89 / 347, Loss(batch): 42.358768463134766
+2026-05-25 05:18:46,391 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 119 / 347, Loss(batch): 42.070838928222656
+2026-05-25 05:18:51,025 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 149 / 347, Loss(batch): 53.734554290771484
+2026-05-25 05:18:55,634 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 179 / 347, Loss(batch): 50.21460723876953
+2026-05-25 05:19:00,265 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 209 / 347, Loss(batch): 40.30345153808594
+2026-05-25 05:19:05,099 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 239 / 347, Loss(batch): 51.167354583740234
+2026-05-25 05:19:09,714 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 269 / 347, Loss(batch): 60.0201530456543
+2026-05-25 05:19:14,791 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 299 / 347, Loss(batch): 48.430171966552734
+2026-05-25 05:19:19,416 mf_transformer_v1 INFO Epoch: 10 / 20, Step: 329 / 347, Loss(batch): 42.35130310058594
+2026-05-25 05:19:22,055 mf_transformer_v1 INFO epoch: 11
+2026-05-25 05:19:22,056 mf_transformer_v1 INFO training
+2026-05-25 05:19:26,622 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 29 / 347, Loss(batch): 37.370269775390625
+2026-05-25 05:19:31,201 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 59 / 347, Loss(batch): 46.55076599121094
+2026-05-25 05:19:35,773 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 89 / 347, Loss(batch): 46.29439926147461
+2026-05-25 05:19:40,379 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 119 / 347, Loss(batch): 47.43293762207031
+2026-05-25 05:19:45,009 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 149 / 347, Loss(batch): 53.21291732788086
+2026-05-25 05:19:49,614 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 179 / 347, Loss(batch): 47.63654327392578
+2026-05-25 05:19:54,209 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 209 / 347, Loss(batch): 39.59971618652344
+2026-05-25 05:19:58,811 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 239 / 347, Loss(batch): 43.39915084838867
+2026-05-25 05:20:03,424 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 269 / 347, Loss(batch): 45.342247009277344
+2026-05-25 05:20:08,033 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 299 / 347, Loss(batch): 42.221649169921875
+2026-05-25 05:20:12,810 mf_transformer_v1 INFO Epoch: 11 / 20, Step: 329 / 347, Loss(batch): 57.418888092041016
+2026-05-25 05:20:15,580 mf_transformer_v1 INFO validating
+2026-05-25 05:20:16,545 mf_transformer_v1 INFO Valid Step: 9 / 99, Loss(batch): 61.415626525878906
+2026-05-25 05:20:17,507 mf_transformer_v1 INFO Valid Step: 19 / 99, Loss(batch): 60.152069091796875
+2026-05-25 05:20:18,440 mf_transformer_v1 INFO Valid Step: 29 / 99, Loss(batch): 68.5306396484375
+2026-05-25 05:20:19,360 mf_transformer_v1 INFO Valid Step: 39 / 99, Loss(batch): 62.31269836425781
+2026-05-25 05:20:20,342 mf_transformer_v1 INFO Valid Step: 49 / 99, Loss(batch): 70.64410400390625
+2026-05-25 05:20:21,276 mf_transformer_v1 INFO Valid Step: 59 / 99, Loss(batch): 67.53369903564453
+2026-05-25 05:20:22,226 mf_transformer_v1 INFO Valid Step: 69 / 99, Loss(batch): 62.25701141357422
+2026-05-25 05:20:23,186 mf_transformer_v1 INFO Valid Step: 79 / 99, Loss(batch): 47.03363037109375
+2026-05-25 05:20:24,165 mf_transformer_v1 INFO Valid Step: 89 / 99, Loss(batch): 55.737037658691406
+2026-05-25 05:24:35,689 mf_transformer_v1 INFO ########valid metric###########
+2026-05-25 05:24:35,690 mf_transformer_v1 INFO epoch11, train_loss45.62796175514243, valid_loss:64.27588749895192
+2026-05-25 05:24:35,690 mf_transformer_v1 INFO threshold:0.95, f_score0.6029264479566163, auc0.9472224750361384, recall0.6274180838353797, precision0.5802750675913954, aupr0.5934422236110308
+2026-05-25 05:24:35,690 mf_transformer_v1 INFO epoch: 12
+2026-05-25 05:24:35,692 mf_transformer_v1 INFO training
+2026-05-25 05:24:41,022 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 29 / 347, Loss(batch): 32.30546569824219
+2026-05-25 05:24:45,675 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 59 / 347, Loss(batch): 45.78003692626953
+2026-05-25 05:24:50,313 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 89 / 347, Loss(batch): 54.93772888183594
+2026-05-25 05:24:54,935 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 119 / 347, Loss(batch): 38.57764434814453
+2026-05-25 05:24:59,580 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 149 / 347, Loss(batch): 38.374412536621094
+2026-05-25 05:25:04,251 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 179 / 347, Loss(batch): 50.37371063232422
+2026-05-25 05:25:08,953 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 209 / 347, Loss(batch): 41.33567810058594
+2026-05-25 05:25:13,585 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 239 / 347, Loss(batch): 46.737056732177734
+2026-05-25 05:25:18,190 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 269 / 347, Loss(batch): 47.17472839355469
+2026-05-25 05:25:22,791 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 299 / 347, Loss(batch): 49.91438293457031
+2026-05-25 05:25:27,371 mf_transformer_v1 INFO Epoch: 12 / 20, Step: 329 / 347, Loss(batch): 43.948822021484375
+2026-05-25 05:25:29,971 mf_transformer_v1 INFO epoch: 13
+2026-05-25 05:25:29,972 mf_transformer_v1 INFO training
+2026-05-25 05:25:34,592 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 29 / 347, Loss(batch): 47.676780700683594
+2026-05-25 05:25:39,189 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 59 / 347, Loss(batch): 45.19635009765625
+2026-05-25 05:25:43,811 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 89 / 347, Loss(batch): 39.315921783447266
+2026-05-25 05:25:49,069 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 119 / 347, Loss(batch): 49.469730377197266
+2026-05-25 05:25:54,146 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 149 / 347, Loss(batch): 38.433555603027344
+2026-05-25 05:25:58,928 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 179 / 347, Loss(batch): 40.4931755065918
+2026-05-25 05:26:03,658 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 209 / 347, Loss(batch): 53.890464782714844
+2026-05-25 05:26:08,454 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 239 / 347, Loss(batch): 41.34359359741211
+2026-05-25 05:26:13,187 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 269 / 347, Loss(batch): 39.027565002441406
+2026-05-25 05:26:17,809 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 299 / 347, Loss(batch): 48.26335906982422
+2026-05-25 05:26:22,385 mf_transformer_v1 INFO Epoch: 13 / 20, Step: 329 / 347, Loss(batch): 49.95124053955078
+2026-05-25 05:26:25,066 mf_transformer_v1 INFO epoch: 14
+2026-05-25 05:26:25,068 mf_transformer_v1 INFO training
+2026-05-25 05:26:30,381 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 29 / 347, Loss(batch): 52.70599365234375
+2026-05-25 05:26:35,042 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 59 / 347, Loss(batch): 48.718345642089844
+2026-05-25 05:26:39,592 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 89 / 347, Loss(batch): 41.97669219970703
+2026-05-25 05:26:44,214 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 119 / 347, Loss(batch): 52.52240753173828
+2026-05-25 05:26:48,937 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 149 / 347, Loss(batch): 50.065589904785156
+2026-05-25 05:26:53,556 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 179 / 347, Loss(batch): 49.769798278808594
+2026-05-25 05:26:58,229 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 209 / 347, Loss(batch): 49.26275634765625
+2026-05-25 05:27:02,955 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 239 / 347, Loss(batch): 41.38127136230469
+2026-05-25 05:27:07,509 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 269 / 347, Loss(batch): 46.807342529296875
+2026-05-25 05:27:12,054 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 299 / 347, Loss(batch): 36.43138122558594
+2026-05-25 05:27:16,753 mf_transformer_v1 INFO Epoch: 14 / 20, Step: 329 / 347, Loss(batch): 43.17088317871094
+2026-05-25 05:27:19,331 mf_transformer_v1 INFO epoch: 15
+2026-05-25 05:27:19,332 mf_transformer_v1 INFO training
+2026-05-25 05:27:23,922 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 29 / 347, Loss(batch): 58.25395202636719
+2026-05-25 05:27:28,507 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 59 / 347, Loss(batch): 41.37566375732422
+2026-05-25 05:27:33,126 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 89 / 347, Loss(batch): 47.258975982666016
+2026-05-25 05:27:37,849 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 119 / 347, Loss(batch): 53.03643798828125
+2026-05-25 05:27:42,432 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 149 / 347, Loss(batch): 32.18454360961914
+2026-05-25 05:27:47,373 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 179 / 347, Loss(batch): 37.53395462036133
+2026-05-25 05:27:52,342 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 209 / 347, Loss(batch): 59.06468200683594
+2026-05-25 05:27:57,240 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 239 / 347, Loss(batch): 39.47700500488281
+2026-05-25 05:28:02,396 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 269 / 347, Loss(batch): 47.12879180908203
+2026-05-25 05:28:07,242 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 299 / 347, Loss(batch): 36.700531005859375
+2026-05-25 05:28:11,988 mf_transformer_v1 INFO Epoch: 15 / 20, Step: 329 / 347, Loss(batch): 48.442344665527344
+2026-05-25 05:28:14,840 mf_transformer_v1 INFO validating
+2026-05-25 05:28:15,813 mf_transformer_v1 INFO Valid Step: 9 / 99, Loss(batch): 63.24391174316406
+2026-05-25 05:28:16,724 mf_transformer_v1 INFO Valid Step: 19 / 99, Loss(batch): 60.583213806152344
+2026-05-25 05:28:17,660 mf_transformer_v1 INFO Valid Step: 29 / 99, Loss(batch): 64.13512420654297
+2026-05-25 05:28:18,630 mf_transformer_v1 INFO Valid Step: 39 / 99, Loss(batch): 70.99589538574219
+2026-05-25 05:28:19,616 mf_transformer_v1 INFO Valid Step: 49 / 99, Loss(batch): 70.59639739990234
+2026-05-25 05:28:20,552 mf_transformer_v1 INFO Valid Step: 59 / 99, Loss(batch): 74.4843978881836
+2026-05-25 05:28:21,485 mf_transformer_v1 INFO Valid Step: 69 / 99, Loss(batch): 63.724403381347656
+2026-05-25 05:28:22,415 mf_transformer_v1 INFO Valid Step: 79 / 99, Loss(batch): 52.33407974243164
+2026-05-25 05:28:23,341 mf_transformer_v1 INFO Valid Step: 89 / 99, Loss(batch): 72.58222961425781
+2026-05-25 05:32:36,716 mf_transformer_v1 INFO ########valid metric###########
+2026-05-25 05:32:36,716 mf_transformer_v1 INFO epoch15, train_loss44.304897093979015, valid_loss:64.15873841565065
+2026-05-25 05:32:36,716 mf_transformer_v1 INFO threshold:0.96, f_score0.5902776058047101, auc0.9479319444740847, recall0.6059127074912937, precision0.5754291094319581, aupr0.590953388402857
+2026-05-25 05:32:36,716 mf_transformer_v1 INFO epoch: 16
+2026-05-25 05:32:36,718 mf_transformer_v1 INFO training
+2026-05-25 05:32:41,810 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 29 / 347, Loss(batch): 35.71659851074219
+2026-05-25 05:32:46,570 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 59 / 347, Loss(batch): 46.497901916503906
+2026-05-25 05:32:51,171 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 89 / 347, Loss(batch): 41.50965118408203
+2026-05-25 05:32:55,848 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 119 / 347, Loss(batch): 37.62445068359375
+2026-05-25 05:33:00,504 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 149 / 347, Loss(batch): 44.71573257446289
+2026-05-25 05:33:05,137 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 179 / 347, Loss(batch): 47.081504821777344
+2026-05-25 05:33:09,777 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 209 / 347, Loss(batch): 49.213043212890625
+2026-05-25 05:33:14,499 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 239 / 347, Loss(batch): 51.59636688232422
+2026-05-25 05:33:19,149 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 269 / 347, Loss(batch): 44.909027099609375
+2026-05-25 05:33:24,050 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 299 / 347, Loss(batch): 42.60235595703125
+2026-05-25 05:33:29,420 mf_transformer_v1 INFO Epoch: 16 / 20, Step: 329 / 347, Loss(batch): 43.65282440185547
+2026-05-25 05:33:32,262 mf_transformer_v1 INFO epoch: 17
+2026-05-25 05:33:32,263 mf_transformer_v1 INFO training
+2026-05-25 05:33:37,137 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 29 / 347, Loss(batch): 55.12005615234375
+2026-05-25 05:33:41,755 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 59 / 347, Loss(batch): 47.399322509765625
+2026-05-25 05:33:46,417 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 89 / 347, Loss(batch): 44.18457794189453
+2026-05-25 05:33:51,110 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 119 / 347, Loss(batch): 40.45471954345703
+2026-05-25 05:33:55,961 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 149 / 347, Loss(batch): 48.49662780761719
+2026-05-25 05:34:00,621 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 179 / 347, Loss(batch): 36.80760192871094
+2026-05-25 05:34:05,360 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 209 / 347, Loss(batch): 24.031681060791016
+2026-05-25 05:34:10,159 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 239 / 347, Loss(batch): 46.985904693603516
+2026-05-25 05:34:14,787 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 269 / 347, Loss(batch): 44.04588317871094
+2026-05-25 05:34:19,640 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 299 / 347, Loss(batch): 44.80982971191406
+2026-05-25 05:34:24,331 mf_transformer_v1 INFO Epoch: 17 / 20, Step: 329 / 347, Loss(batch): 31.945823669433594
+2026-05-25 05:34:26,947 mf_transformer_v1 INFO epoch: 18
+2026-05-25 05:34:26,948 mf_transformer_v1 INFO training
+2026-05-25 05:34:31,546 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 29 / 347, Loss(batch): 30.808870315551758
+2026-05-25 05:34:36,235 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 59 / 347, Loss(batch): 39.596412658691406
+2026-05-25 05:34:40,905 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 89 / 347, Loss(batch): 42.96937561035156
+2026-05-25 05:34:45,582 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 119 / 347, Loss(batch): 43.378482818603516
+2026-05-25 05:34:50,204 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 149 / 347, Loss(batch): 41.078208923339844
+2026-05-25 05:34:54,829 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 179 / 347, Loss(batch): 46.32805633544922
+2026-05-25 05:34:59,446 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 209 / 347, Loss(batch): 55.49786376953125
+2026-05-25 05:35:04,080 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 239 / 347, Loss(batch): 64.75564575195312
+2026-05-25 05:35:08,853 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 269 / 347, Loss(batch): 47.367618560791016
+2026-05-25 05:35:13,478 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 299 / 347, Loss(batch): 37.82560348510742
+2026-05-25 05:35:18,414 mf_transformer_v1 INFO Epoch: 18 / 20, Step: 329 / 347, Loss(batch): 46.60365295410156
+2026-05-25 05:35:21,413 mf_transformer_v1 INFO epoch: 19
+2026-05-25 05:35:21,414 mf_transformer_v1 INFO training
+2026-05-25 05:35:26,704 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 29 / 347, Loss(batch): 36.84933090209961
+2026-05-25 05:35:31,771 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 59 / 347, Loss(batch): 41.088172912597656
+2026-05-25 05:35:37,202 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 89 / 347, Loss(batch): 44.08348083496094
+2026-05-25 05:35:42,471 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 119 / 347, Loss(batch): 39.826683044433594
+2026-05-25 05:35:47,395 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 149 / 347, Loss(batch): 44.3450927734375
+2026-05-25 05:35:52,768 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 179 / 347, Loss(batch): 39.57324981689453
+2026-05-25 05:35:58,126 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 209 / 347, Loss(batch): 39.7786865234375
+2026-05-25 05:36:02,741 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 239 / 347, Loss(batch): 50.91766357421875
+2026-05-25 05:36:07,917 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 269 / 347, Loss(batch): 47.36872863769531
+2026-05-25 05:36:12,954 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 299 / 347, Loss(batch): 40.50196838378906
+2026-05-25 05:36:17,684 mf_transformer_v1 INFO Epoch: 19 / 20, Step: 329 / 347, Loss(batch): 36.9903450012207
+2026-05-25 05:36:20,316 mf_transformer_v1 INFO validating
+2026-05-25 05:36:21,309 mf_transformer_v1 INFO Valid Step: 9 / 99, Loss(batch): 64.04562377929688
+2026-05-25 05:36:22,236 mf_transformer_v1 INFO Valid Step: 19 / 99, Loss(batch): 66.92057800292969
+2026-05-25 05:36:23,164 mf_transformer_v1 INFO Valid Step: 29 / 99, Loss(batch): 63.379512786865234
+2026-05-25 05:36:24,103 mf_transformer_v1 INFO Valid Step: 39 / 99, Loss(batch): 65.15951538085938
+2026-05-25 05:36:25,038 mf_transformer_v1 INFO Valid Step: 49 / 99, Loss(batch): 68.73202514648438
+2026-05-25 05:36:25,976 mf_transformer_v1 INFO Valid Step: 59 / 99, Loss(batch): 78.52761840820312
+2026-05-25 05:36:26,970 mf_transformer_v1 INFO Valid Step: 69 / 99, Loss(batch): 59.020408630371094
+2026-05-25 05:36:27,929 mf_transformer_v1 INFO Valid Step: 79 / 99, Loss(batch): 75.54828643798828
+2026-05-25 05:36:28,838 mf_transformer_v1 INFO Valid Step: 89 / 99, Loss(batch): 69.31934356689453
+2026-05-25 05:40:40,741 mf_transformer_v1 INFO ########valid metric###########
+2026-05-25 05:40:40,742 mf_transformer_v1 INFO epoch19, train_loss43.884814116728066, valid_loss:64.09816395152698
+2026-05-25 05:40:40,742 mf_transformer_v1 INFO threshold:0.96, f_score0.5794312185104706, auc0.9478883483632422, recall0.6168433361295407, precision0.5462977554650037, aupr0.5852414193805775
+2026-05-25 05:40:40,742 mf_transformer_v1 INFO best_fscore: 0.6049880962990312
+2026-05-25 05:40:40,742 mf_transformer_v1 INFO best_scores[thresh,fmax,recall,precision,auc]: [0.95, 0.6049880962990312, 0.6039807824296499, 0.605998775760049, 0.9451563902078797]
+2026-05-25 05:40:40,742 mf_transformer_v1 INFO best_aupr: 0.5918355944756188
+2026-05-25 05:40:40,743 mf_transformer_v1 INFO best_score_dict: {0.01: [0.0919736315578863, 0.9990848776023793, 0.04820567164508616, 0.9451563902078797], 0.02: [0.09824062697838756, 0.9979918147385546, 0.05166312902754621, 0.9451563902078797], 0.03: [0.10324256673259978, 0.9971021124075345, 0.05443969788569954, 0.9451563902078797], 0.04: [0.10757679743047739, 0.9961361498767127, 0.05685859422722834, 0.9451563902078797], 0.05: [0.11168479694515858, 0.9955260682782989, 0.05916093381311049, 0.9451563902078797], 0.06: [0.11550524319417899, 0.9946872060804799, 0.06131249157795445, 0.9451563902078797], 0.07: [0.11916298451591466, 0.9936958234830575, 0.06338183457261728, 0.9451563902078797], 0.08: [0.12274258209649244, 0.9930857418846437, 0.06541376925768842, 0.9451563902078797], 0.09: [0.12609276573332234, 0.9919672589542184, 0.06732537636857379, 0.9451563902078797], 0.1: [0.12944642219954028, 0.9913317572892041, 0.0692440997450266, 0.9451563902078797], 0.11: [0.13275620649829825, 0.9905437352245863, 0.07114570381609145, 0.9451563902078797], 0.12: [0.13599118627377374, 0.989959073692773, 0.07301032613178754, 0.9451563902078797], 0.13: [0.13913118113446415, 0.9889422710287501, 0.07482934316593673, 0.9451563902078797], 0.14: [0.14223863445055226, 0.9879508884313277, 0.07663609636054952, 0.9451563902078797], 0.15: [0.14531014917999655, 0.9869595058339052, 0.078428599997172, 0.9451563902078797], 0.16: [0.1483118486982089, 0.9860443834362846, 0.08018637803153708, 0.9451563902078797], 0.17: [0.1513647788056501, 0.9851292610386639, 0.0819805297828322, 0.9451563902078797], 0.18: [0.15433229730079964, 0.9839090978418363, 0.0837331856511788, 0.9451563902078797], 0.19: [0.15731439070992106, 0.9826380945118076, 0.08550131605140342, 0.9451563902078797], 0.2: [0.16016396435268931, 0.9813162510485778, 0.08719791650196401, 0.9451563902078797], 0.21: [0.1631334826555669, 0.9803248684511553, 0.08896932617241571, 0.9451563902078797], 0.22: [0.16597814240605843, 0.9794351661201353, 0.09067183760492682, 0.9451563902078797], 0.23: [0.16876482633727533, 0.9783675233229111, 0.09234718973067002, 0.9451563902078797], 0.24: [0.17145572712729998, 0.9767406390604744, 0.09397608041675838, 0.9451563902078797], 0.25: [0.1742338419486148, 0.9754442156638451, 0.09566034631473458, 0.9451563902078797], 0.26: [0.17699556425821975, 0.974249472533618, 0.09733982841207516, 0.9451563902078797], 0.27: [0.17970068666001526, 0.9729276290703882, 0.09899233387475559, 0.9451563902078797], 0.28: [0.18240171806955796, 0.9715549454739572, 0.10064887184781006, 0.9451563902078797], 0.29: [0.18509854873623457, 0.9705381428099341, 0.1023049426845803, 0.9451563902078797], 0.3: [0.18774372710442352, 0.9692671394799054, 0.1039380896435357, 0.9451563902078797], 0.31: [0.19046690418151135, 0.968275756882483, 0.10562173493494825, 0.9451563902078797], 0.32: [0.19319125380570162, 0.9670047535524543, 0.10731554567561316, 0.9451563902078797], 0.33: [0.19587426832727367, 0.9654795495564198, 0.10899328782022033, 0.9451563902078797], 0.34: [0.19853740151810706, 0.9637509850275807, 0.11066774863974967, 0.9451563902078797], 0.35: [0.20130804482141385, 0.9619970004321411, 0.11241615722340052, 0.9451563902078797], 0.36: [0.2041141591366479, 0.9603701161697044, 0.11419210146110274, 0.9451563902078797], 0.37: [0.20701504007026017, 0.9586923917740664, 0.1160355792394953, 0.9451563902078797], 0.38: [0.2098422990825637, 0.9567350466458222, 0.11784468560764987, 0.9451563902078797], 0.39: [0.2128185083217203, 0.9549810620503826, 0.11975276765706235, 0.9451563902078797], 0.4: [0.2158123101003591, 0.9533287577213452, 0.12167883898472809, 0.9451563902078797], 0.41: [0.21897191122965876, 0.9516001931925062, 0.1237205736060573, 0.9451563902078797], 0.42: [0.22198458951920963, 0.9498462085970665, 0.1256781528009014, 0.9451563902078797], 0.43: [0.2252193498910044, 0.9480922240016268, 0.12778765670665063, 0.9451563902078797], 0.44: [0.22823793517996024, 0.9459060982739774, 0.12977578444057714, 0.9451563902078797], 0.45: [0.23133586870867168, 0.9439995932789343, 0.1318197630254368, 0.9451563902078797], 0.46: [0.23448847652108973, 0.941813467551285, 0.13391501727702518, 0.9451563902078797], 0.47: [0.23778072183777943, 0.9398561224230407, 0.13610778773767232, 0.9451563902078797], 0.48: [0.24111547433141453, 0.9380512976944, 0.13833667597608293, 0.9451563902078797], 0.49: [0.2444504943591923, 0.9358143318335495, 0.14058710985683134, 0.9451563902078797], 0.5: [0.2479295909107776, 0.9341366074379115, 0.14293271100739013, 0.9451563902078797], 0.51: [0.25140157113123507, 0.9318742215104604, 0.14530039873482944, 0.9451563902078797], 0.52: [0.2549189784558329, 0.9295609954498081, 0.14771368557117467, 0.9451563902078797], 0.53: [0.258457024813887, 0.9270952489895523, 0.15015933663260347, 0.9451563902078797], 0.54: [0.2620795481560994, 0.9247566028622995, 0.15267396623286147, 0.9451563902078797], 0.55: [0.266067389367716, 0.9224433768016472, 0.15545293316312106, 0.9451563902078797], 0.56: [0.27002894312824494, 0.9201809908741961, 0.15823108496194918, 0.9451563902078797], 0.57: [0.2741563820377422, 0.9178931848801444, 0.16114334166369154, 0.9451563902078797], 0.58: [0.27827606470169797, 0.914868196954676, 0.16409438048558075, 0.9451563902078797], 0.59: [0.28258198657971834, 0.9120719896286128, 0.1671908855804851, 0.9451563902078797], 0.6: [0.2870043345641355, 0.908894481303541, 0.17040715657631983, 0.9451563902078797], 0.61: [0.29172293564465834, 0.9060474338442767, 0.17384878769699008, 0.9451563902078797], 0.62: [0.29653428578581503, 0.9032766465848141, 0.17738352560614606, 0.9451563902078797], 0.63: [0.301140690881706, 0.8995907369277307, 0.18083845186873385, 0.9451563902078797], 0.64: [0.3059180839986116, 0.8961590279366531, 0.1844397591306941, 0.9451563902078797], 0.65: [0.3110880819836936, 0.8928035791453773, 0.18836009481824714, 0.9451563902078797], 0.66: [0.31630909436111637, 0.8893464500876992, 0.19236288659793815, 0.9451563902078797], 0.67: [0.3214991048192104, 0.8855588601642136, 0.1964008862479352, 0.9451563902078797], 0.68: [0.3270826755140416, 0.8821271511731361, 0.20076134496563533, 0.9451563902078797], 0.69: [0.33296726586131825, 0.8786191819822567, 0.20540431322909794, 0.9451563902078797], 0.7: [0.33882698207136985, 0.8745773913927655, 0.21011456908344733, 0.9451563902078797], 0.71: [0.34471508694907915, 0.8702305600040672, 0.21492563550410276, 0.9451563902078797], 0.72: [0.3510709539165284, 0.8662141894811765, 0.22014768682124466, 0.9451563902078797], 0.73: [0.3573925560353691, 0.8615114771600701, 0.22546202051650502, 0.9451563902078797], 0.74: [0.36419689762597657, 0.857342586237576, 0.23120638359131854, 0.9451563902078797], 0.75: [0.3713654460582636, 0.8524110933170644, 0.23739504721990173, 0.9451563902078797], 0.76: [0.3786376864314296, 0.8466915783319352, 0.2438413727973528, 0.9451563902078797], 0.77: [0.38658298058677565, 0.8415567248786192, 0.25092469075915597, 0.9451563902078797], 0.78: [0.3948917561690574, 0.8355575891608836, 0.2585400001573106, 0.9451563902078797], 0.79: [0.4037072119760034, 0.8287958514451308, 0.266843449224121, 0.9451563902078797], 0.8: [0.41282565130260523, 0.8221357939957803, 0.2756099431600297, 0.9451563902078797], 0.81: [0.422702367687104, 0.8148402348814154, 0.2853696317926074, 0.9451563902078797], 0.82: [0.4329007279766611, 0.807214214901243, 0.2957557581797353, 0.9451563902078797], 0.83: [0.4433657643908402, 0.7975545895930247, 0.3070201189917019, 0.9451563902078797], 0.84: [0.45448951786577596, 0.7886067261496225, 0.3192356373290526, 0.9451563902078797], 0.85: [0.4660476444173834, 0.7782861791097893, 0.3326090971309383, 0.9451563902078797], 0.86: [0.4782718904960314, 0.7674063906047434, 0.34738731689354796, 0.9451563902078797], 0.87: [0.49124052639400295, 0.7562724014336918, 0.36376196706077984, 0.9451563902078797], 0.88: [0.5046080170884223, 0.7446300109306286, 0.381603116084572, 0.9451563902078797], 0.89: [0.5187253436132078, 0.7319962378301431, 0.4016906831085134, 0.9451563902078797], 0.9: [0.5343913844409806, 0.718981163730649, 0.42522099945877684, 0.9451563902078797], 0.91: [0.5494867671292711, 0.7035257632374997, 0.4507858946168255, 0.9451563902078797], 0.92: [0.5658761804826863, 0.6854266758178906, 0.4818355640535373, 0.9451563902078797], 0.93: [0.5805349647226936, 0.6609471516815374, 0.5175667336823457, 0.9451563902078797], 0.94: [0.5946491790814266, 0.6361880068125778, 0.5582022973123676, 0.9451563902078797], 0.95: [0.6049880962990312, 0.6039807824296499, 0.605998775760049, 0.9451563902078797]}

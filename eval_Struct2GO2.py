@@ -14,7 +14,6 @@ from sklearn.metrics import roc_auc_score
 import warnings
 import datetime
 import pandas as pd
-import matplotlib.pyplot as plt
 from tqdm import tqdm
 import os
 import logging
@@ -42,19 +41,21 @@ Thresholds = [x/100 for x in range(1,100)]
 
 if __name__ == "__main__":
     
-    device = "cuda:0"
     #参数设置
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-branch', '--branch',type=str,default='mf')
     parser.add_argument('-thresh', '--thresh',type=float,default=0.71)
     parser.add_argument('-batch', '--batch', type = str, default = '1')
+    parser.add_argument('-gpu', '--gpu', type=str, default='0')
+    parser.add_argument('-exp_name', '--exp_name', type=str, default='')
     args = parser.parse_args()
+    device = "cuda:" + args.gpu if torch.cuda.is_available() else "cpu"
     
     input_thresh = args.thresh
-    test_data_path = '/etc/dsw/divided_data/'+args.branch+'_test_dataset'
+    test_data_path = 'divided_data/'+args.branch+'_test_dataset'
     label_network_path = 'processed_data/label_'+args.branch+'_network'
     term2idx_path = 'processed_data/'+args.branch+'_term2idx.json'
-    model_path = 'save_models/bestmodel_'+args.branch+'_32_0.0001_0.2.pkl'
+    model_path = 'save_models/bestmodel_'+args.branch+'_'+args.exp_name+'_32_0.0001_0.2_1.pkl'
     
     logger = create_logger(args.branch)
     
@@ -69,7 +70,8 @@ if __name__ == "__main__":
     #prevent loop
     #label_network = dgl.remove_self_loop(label_network)
     #label_topo_order_list = dgl.topological_nodes_generator(label_network)
-    model = torch.load(model_path)
+    model = torch.load(model_path, map_location=device)
+    model = model.to(device)
 
     batch_size = 32
     test_dataloader = GraphDataLoader(dataset=test_dataset, batch_size = batch_size, drop_last = False, shuffle = False)
@@ -112,7 +114,7 @@ if __name__ == "__main__":
     temp = {}
     temp["pred"] = pred
     temp["actual"] = actual
-    with open('test_result/'+args.branch+args.batch+"_pred_actual.pkl",'wb') as f:
+    with open('test_result/'+args.branch+args.batch+"_"+args.exp_name+"_pred_actual.pkl",'wb') as f:
         pickle.dump(temp, f)
         
     for i in range(len(pred)):
@@ -124,7 +126,7 @@ if __name__ == "__main__":
             # 寻找新预测出来的标签
             if y[j] < 1. and y_[j] > input_thresh:
                 result[protein].append(x+f" {y_[j]:.5f}")
-    with open('test_result/'+args.branch+'_result.json','w') as f:
+    with open('test_result/'+args.branch+'_'+args.exp_name+'_result.json','w') as f:
         json.dump(result,f,indent=4)
         
     t_loss /= len(test_dataloader)
@@ -156,7 +158,7 @@ if __name__ == "__main__":
     plt.legend(loc="lower right")
 
     # save ROC pic
-    roc_curve_path = os.path.join("test_result", f"{args.branch}_roc_curve.png")
+    roc_curve_path = os.path.join("test_result", f"{args.branch}_{args.exp_name}_roc_curve.png")
     plt.savefig(roc_curve_path)
     plt.show()
     

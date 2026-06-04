@@ -33,13 +33,15 @@ class SAGNetworkHierarchical(torch.nn.Module):
             convpools.append(ConvPoolBlock(_i_dim, _o_dim, pool_ratio=pool_ratio))
         self.convpools = torch.nn.ModuleList(convpools)
         # self.transformer_encoder = torch.nn.TransformerEncoder(
-        #     torch.nn.TransformerEncoderLayer(hid_dim * 2 + 1024, nhead=8), num_layers=6)    
-        self.lin1 = torch.nn.Linear(hid_dim*2 + 1024, hid_dim*2)
+        #     torch.nn.TransformerEncoderLayer(hid_dim * 2 + 1280, nhead=8), num_layers=6)    
+        self.transformer_encoder = torch.nn.TransformerEncoder(
+            torch.nn.TransformerEncoderLayer(hid_dim*2 + 1280, nhead=8, batch_first=True, dropout=0.1), num_layers=3)
+        self.lin1 = torch.nn.Linear(hid_dim*2 + 1280, hid_dim*2)
         self.lin2 = torch.nn.Linear(hid_dim*2, hid_dim)
         self.lin3 = torch.nn.Linear(hid_dim, out_dim)
         # self.label_network1 = GATConv(1,1,num_heads=8,allow_zero_in_degree=True)
 
-        self.line_new = torch.nn.Linear(hid_dim * 2 + 1024, out_dim)
+        self.line_new = torch.nn.Linear(hid_dim * 2 + 1280, out_dim)
 
 
 
@@ -70,8 +72,7 @@ class SAGNetworkHierarchical(torch.nn.Module):
             else:
                 final_readout = final_readout + readout
         final_readout = torch.cat((final_readout,sequence_feature), -1)
-        #con_readout = self.transformer_encoder(final_readout)
-        #final_readout = torch.cat((sequence_feature,con_readout), -1)
+        final_readout = self.transformer_encoder(final_readout.unsqueeze(1)).squeeze(1)
         feat = F.relu(self.lin1(final_readout))
         feat = F.dropout(feat, p=self.dropout, training=self.training)
         feat = F.relu(self.lin2(feat))
@@ -115,13 +116,15 @@ class SAGNetworkHierarchical2(torch.nn.Module):
             convpools.append(ConvPoolBlock(_i_dim, _o_dim, pool_ratio=pool_ratio))
         self.convpools = torch.nn.ModuleList(convpools)
         self.transformer_encoder = torch.nn.TransformerEncoder(
-            torch.nn.TransformerEncoderLayer(hid_dim * 2 + 1024, nhead=8), num_layers=3)    
-        self.lin1 = torch.nn.Linear(hid_dim*2 + 1024, hid_dim*2)
+            torch.nn.TransformerEncoderLayer(hid_dim * 2 + 1280, nhead=8), num_layers=3)    
+        self.transformer_encoder = torch.nn.TransformerEncoder(
+            torch.nn.TransformerEncoderLayer(hid_dim*2 + 1280, nhead=8, batch_first=True, dropout=0.1), num_layers=3)
+        self.lin1 = torch.nn.Linear(hid_dim*2 + 1280, hid_dim*2)
         self.lin2 = torch.nn.Linear(hid_dim*2, hid_dim)
         self.lin3 = torch.nn.Linear(hid_dim, out_dim)
         # self.label_network1 = GATConv(1,1,num_heads=8,allow_zero_in_degree=True)
 
-        self.line_new = torch.nn.Linear(hid_dim * 2 + 1024, out_dim)
+        self.line_new = torch.nn.Linear(hid_dim * 2 + 1280, out_dim)
         
 
 
@@ -193,7 +196,7 @@ class SAGNetworkGlobal(torch.nn.Module):
         self.avg_readout = AvgPooling()
         self.max_readout = MaxPooling()
 
-        self.lin1 = torch.nn.Linear(concat_dim * 2 + 1024, hid_dim)
+        self.lin1 = torch.nn.Linear(concat_dim * 2 + 1280, hid_dim)
         self.lin2 = torch.nn.Linear(hid_dim, hid_dim // 2)
         self.lin3 = torch.nn.Linear(hid_dim // 2, out_dim)
     

@@ -25,11 +25,11 @@ if __name__ == "__main__":
     ns_type_list = ['bp','mf','cc']
     for ns_type in ns_type_list:
         print("divide",ns_type,"dataset")
-        with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_graph_'+ns_type,'rb')as f:
+        with open('processed_data/emb_graph_'+ns_type,'rb')as f:
             emb_graph = pickle.load(f)
-        with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_seq_feature_'+ns_type,'rb')as f:
+        with open('processed_data/emb_seq_feature_'+ns_type,'rb')as f:
             emb_seq_feature = pickle.load(f)
-        with open('/mnt/workspace/replicate/Struct2GO/processed_data/emb_label_'+ns_type,'rb')as f:
+        with open('processed_data/emb_label_'+ns_type,'rb')as f:
             emb_label = pickle.load(f)
 
         dataset = MyDataSet(emb_graph = emb_graph, emb_seq_feature = emb_seq_feature, emb_label = emb_label)
@@ -37,11 +37,11 @@ if __name__ == "__main__":
         valid_size = int(len(dataset) * 0.2)
         test_size = len(dataset) - train_size - valid_size
         train_dataset, valid_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, valid_size, test_size])
-        with open('/mnt/workspace/replicate/Struct2GO/divided_data/'+ns_type+'_train_dataset','wb')as f:
+        with open('divided_data/'+ns_type+'_train_dataset','wb')as f:
             pickle.dump(train_dataset,f)
-        with open('/mnt/workspace/replicate/Struct2GO/divided_data/'+ns_type+'_valid_dataset','wb')as f:
+        with open('divided_data/'+ns_type+'_valid_dataset','wb')as f:
             pickle.dump(valid_dataset,f)
-        with open('/mnt/workspace/replicate/Struct2GO/divided_data/'+ns_type+'_test_dataset','wb')as f:
+        with open('divided_data/'+ns_type+'_test_dataset','wb')as f:
             pickle.dump(test_dataset,f)
         print("train dataset size",len(train_dataset))
         print("valid dataset size",len(valid_dataset))

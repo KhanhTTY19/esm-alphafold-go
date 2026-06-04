@@ -46,22 +46,24 @@ Thresholds = [x/100 for x in range(1,100)]
 
 if __name__ == "__main__":
     #参数设置
-    device = "cuda:0"
-    
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-batch_size', '--batch_size', type=int, default=64,  help="the number of the bach size")
     parser.add_argument('-learningrate', '--learningrate',type=float,default=1e-4)
     parser.add_argument('-dropout', '--dropout',type=float,default=0.3)
     parser.add_argument('-branch', '--branch',type=str,default='mf')
     parser.add_argument('-labels_num', '--labels_num',type=int,default=328)
+    parser.add_argument('-gpu', '--gpu',type=str,default='0')
+    parser.add_argument('-exp_name', '--exp_name',type=str,default='')
     
     args = parser.parse_args()
+    device = "cuda:" + args.gpu if torch.cuda.is_available() else "cpu"
     # 根据选择的标签大类自动填写训练文件路径
-    train_data_path = '/etc/dsw/divided_data/'+args.branch+'_train_dataset'
-    valid_data_path = '/etc/dsw/divided_data/'+args.branch+'_valid_dataset'
+    train_data_path = 'divided_data/'+args.branch+'_train_dataset'
+    valid_data_path = 'divided_data/'+args.branch+'_valid_dataset'
     label_network_path = 'processed_data/label_'+args.branch+'_network'
     
-    logger = create_logger(args.branch)
+    exp_name = args.branch + ("_" + args.exp_name if args.exp_name else "")
+    logger = create_logger(exp_name)
     
     with open(train_data_path,'rb')as f:
         train_dataset = pickle.load(f)
@@ -84,7 +86,7 @@ if __name__ == "__main__":
     
     # TODO: 这里的输入特征应该是one-hot(26)+node2vec(30) = 56
     # 但暂时没做特征拼接，先用node2vec特征试试
-    model = SAGNetworkHierarchical(56, 512, labels_num, num_convs=6, pool_ratio=0.75, dropout=dropout).to(device)
+    model = SAGNetworkHierarchical(154, 512, labels_num, num_convs=6, pool_ratio=0.75, dropout=dropout).to(device)
     optimizer = optim.Adam(model.parameters(), lr=learningrate)
     lr_scheduler = get_cosine_schedule_with_warmup(optimizer, num_warmup_steps=100, num_training_steps=epoch_num*len(train_dataloader))
     criterion = nn.CrossEntropyLoss()
@@ -173,7 +175,7 @@ if __name__ == "__main__":
                 best_scores = each_best_scores
                 best_score_dict = score_dict
                 best_aupr = aupr
-                torch.save(model, 'save_models/bestmodel_{}_{}_{}_{}.pkl'.format(args.branch,batch_size,learningrate,dropout))
+                torch.save(model, 'save_models/bestmodel_{}_{}_{}_{}_{}.pkl'.format(exp_name,batch_size,learningrate,dropout,args.gpu))
             
             thresh, f_score, recall = each_best_scores[0], each_best_scores[1], each_best_scores[2]
             precision, auc_score = each_best_scores[3], each_best_scores[4]

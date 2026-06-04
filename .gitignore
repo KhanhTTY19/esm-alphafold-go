@@ -1,0 +1,25 @@
+# Large data files
+divided_data/
+raw_data/
+save_models/
+
+# Large embedding files
+processed_data/emb_*
+processed_data/dict_sequence_feature*
+processed_data/node2vec_features/
+processed_data/protein_node2vec
+processed_data/protein_node2onehot
+processed_data/protein_sequence
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Keep these (small, useful for report):
+# processed_data/gos_*.csv
+# processed_data/*_term2idx.json
+# processed_data/histogram_*.png
+# processed_data/HUMAN_protein_info.json
+# processed_data/label_*_network
+# log/
+# test_result/
