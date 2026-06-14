@@ -50,21 +50,38 @@ class ConvPoolBlock(torch.nn.Module):
     """
     def __init__(self, in_dim:int, out_dim:int, pool_ratio=0.5):
         super(ConvPoolBlock, self).__init__()
+        self.in_dim = in_dim
+        self.out_dim = out_dim
         self.conv1 = GraphConv(in_dim, out_dim)
         self.conv2 = GraphConv(out_dim, out_dim)
+        self.bn1 = torch.nn.BatchNorm1d(out_dim)
+        self.bn2 = torch.nn.BatchNorm1d(out_dim)
+        # Projection for residual connection when dimensions mismatch
+        self.residual = torch.nn.Linear(in_dim, out_dim) if in_dim != out_dim else None
         self.pool = SAGPool(out_dim, ratio=pool_ratio)
         self.avgpool = AvgPooling()
         self.maxpool = MaxPooling()
         self.sumpool = SumPooling()
-        self.allow_zero_in_degree = True   
-    
+        self.allow_zero_in_degree = True
+
+    def _apply_bn(self, x, bn):
+        # x: [num_nodes, out_dim]
+        return bn(x)
+
     def forward(self, graph, feature):
-        out = F.relu(self.conv1(graph, feature))
-        out = torch.reshape(out,(-1,512))
-        out = F.relu(self.conv2(graph, out))
-        out = torch.reshape(out,(-1,512))
-        out = F.relu(self.conv2(graph, out))
-        out = torch.reshape(out,(-1,512))
+        identity = feature
+        # First GCN + BN + ReLU
+        out = self.conv1(graph, feature)
+        out = self._apply_bn(out, self.bn1)
+        out = F.relu(out)
+        # Second GCN + BN
+        out = self.conv2(graph, out)
+        out = self._apply_bn(out, self.bn2)
+        # Residual connection
+        if self.residual is not None:
+            identity = self.residual(identity)
+        out = out + identity
+        out = F.relu(out)
         graph, out, _ = self.pool(graph, out)
         g_out = torch.cat([self.maxpool(graph, out), self.sumpool(graph, out)], dim=-1)
         return graph, out, g_out 
