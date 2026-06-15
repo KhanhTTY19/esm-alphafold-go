@@ -45,26 +45,29 @@ class SAGPool(torch.nn.Module):
 
 
 class ConvPoolBlock(torch.nn.Module):
-    """A combination of GCN layer and SAGPool layer,
+    """A combination of GAT layer and SAGPool layer,
     followed by a concatenated (max||sum) readout operation.
     """
-    def __init__(self, in_dim:int, out_dim:int, pool_ratio=0.5):
+    def __init__(self, in_dim:int, out_dim:int, pool_ratio=0.5, num_heads:int=4):
         super(ConvPoolBlock, self).__init__()
-        self.conv1 = GraphConv(in_dim, out_dim)
-        self.conv2 = GraphConv(out_dim, out_dim)
+        # GATConv returns (N, num_heads, feat_dim); flatten to (N, out_dim)
+        self.conv1 = GATConv(in_dim, out_dim // num_heads, num_heads=num_heads,
+                             allow_zero_in_degree=True)
+        self.conv2 = GATConv(out_dim, out_dim // num_heads, num_heads=num_heads,
+                             allow_zero_in_degree=True)
         self.pool = SAGPool(out_dim, ratio=pool_ratio)
         self.avgpool = AvgPooling()
         self.maxpool = MaxPooling()
         self.sumpool = SumPooling()
-        self.allow_zero_in_degree = True   
-    
+        self.allow_zero_in_degree = True
+
     def forward(self, graph, feature):
-        out = F.relu(self.conv1(graph, feature))
-        out = torch.reshape(out,(-1,512))
-        out = F.relu(self.conv2(graph, out))
-        out = torch.reshape(out,(-1,512))
-        out = F.relu(self.conv2(graph, out))
-        out = torch.reshape(out,(-1,512))
+        # First GAT + ELU + flatten
+        out = self.conv1(graph, feature).flatten(1)
+        out = F.elu(out)
+        # Second GAT + ELU + flatten
+        out = self.conv2(graph, out).flatten(1)
+        out = F.elu(out)
         graph, out, _ = self.pool(graph, out)
         g_out = torch.cat([self.maxpool(graph, out), self.sumpool(graph, out)], dim=-1)
         return graph, out, g_out 
