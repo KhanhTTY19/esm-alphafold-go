@@ -87,7 +87,7 @@ if __name__ == "__main__":
     model = SAGNetworkHierarchical(30, 512, labels_num, num_convs=6, pool_ratio=0.75, dropout=dropout).to(device)
     optimizer = optim.Adam(model.parameters(), lr=learningrate)
     lr_scheduler = get_cosine_schedule_with_warmup(optimizer, num_warmup_steps=100, num_training_steps=epoch_num*len(train_dataloader))
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.BCEWithLogitsLoss()
     
     best_fscore = 0
     best_aupr = 0
@@ -105,14 +105,14 @@ if __name__ == "__main__":
         for i,(pids, graphs, labels, seq_feats) in tqdm(enumerate(train_dataloader)):
             graphs = graphs.to(device)
             seq_feats = seq_feats.to(device)
-            labels = labels.to(device)
+            labels = labels.to(device).float()
             labels = torch.squeeze(labels)
             if len(labels.shape)==1:
                 labels = labels.unsqueeze(0)
-            
+
             optimizer.zero_grad()
             logits = model(graphs,seq_feats,label_network)
-            
+
             loss = criterion(logits,labels)
             loss.backward()
             optimizer.step()
@@ -135,18 +135,16 @@ if __name__ == "__main__":
                 for i,(pids, graphs, labels, seq_feats) in tqdm(enumerate(valid_dataloader)):
                     graphs = graphs.to(device)
                     seq_feats = seq_feats.to(device)
-                    labels = labels.to(device)
+                    labels = labels.to(device).float()
                     labels = torch.squeeze(labels)
                     if len(labels.shape)==1:
                         labels = labels.unsqueeze(0)
-                    
+
                     logits = model(graphs,seq_feats,label_network)
-                    logits = F.sigmoid(logits)
-                    
                     loss = criterion(logits,labels)
-                    
+
                     valid_loss += loss.item()
-                    pred += logits.tolist()
+                    pred += F.sigmoid(logits).tolist()
                     actual += labels.tolist()
                     if i%10 == 9:
                         logger.info(f'Valid Step: {i} / {len(valid_dataloader)}, Loss(batch): {loss.item()}')
