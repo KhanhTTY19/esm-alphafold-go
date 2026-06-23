@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     batch_size = 32
     test_dataloader = GraphDataLoader(dataset=test_dataset, batch_size = batch_size, drop_last = False, shuffle = False)
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.BCEWithLogitsLoss()
     logger.info('#########'+args.branch+'###########')
     logger.info('########start testing###########') 
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
                 labels = labels.unsqueeze(0)
             
             logits = model(graphs,seq_feats,label_network)
-            logits = F.sigmoid(logits)
+            # logits = F.sigmoid(logits)
             
             loss = criterion(logits,labels)
             

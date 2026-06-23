@@ -1,0 +1,87 @@
+2026-06-23 09:57:35,284 cc_transformer_v4_lr01_do03_wd1e4 INFO #########cc###########
+2026-06-23 09:57:35,284 cc_transformer_v4_lr01_do03_wd1e4 INFO ########start training###########
+2026-06-23 09:57:35,284 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 0
+2026-06-23 09:57:35,285 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 09:57:48,283 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 0 / 50, Step: 29 / 89, Loss(batch): 0.543172299861908
+2026-06-23 09:57:59,832 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 0 / 50, Step: 59 / 89, Loss(batch): 0.14804060757160187
+2026-06-23 09:58:11,038 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 1
+2026-06-23 09:58:11,040 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 09:58:22,543 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 1 / 50, Step: 29 / 89, Loss(batch): 0.1406249701976776
+2026-06-23 09:58:33,487 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 1 / 50, Step: 59 / 89, Loss(batch): 0.1422881931066513
+2026-06-23 09:58:43,926 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 2
+2026-06-23 09:58:43,928 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 09:58:54,368 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 2 / 50, Step: 29 / 89, Loss(batch): 0.14224709570407867
+2026-06-23 09:59:04,871 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 2 / 50, Step: 59 / 89, Loss(batch): 0.14772982895374298
+2026-06-23 09:59:15,220 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 3
+2026-06-23 09:59:15,222 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 09:59:27,075 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 3 / 50, Step: 29 / 89, Loss(batch): 0.1389811635017395
+2026-06-23 09:59:38,342 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 3 / 50, Step: 59 / 89, Loss(batch): 0.1380537748336792
+2026-06-23 09:59:49,454 cc_transformer_v4_lr01_do03_wd1e4 INFO validating
+2026-06-23 09:59:53,129 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 9 / 26, Loss(batch): 0.1295582503080368
+2026-06-23 09:59:55,950 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 19 / 26, Loss(batch): 0.13987189531326294
+2026-06-23 10:04:39,196 cc_transformer_v4_lr01_do03_wd1e4 INFO ########valid metric###########
+2026-06-23 10:04:39,196 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch3, train_loss0.14440768195337125, valid_loss:0.1421437286413633
+2026-06-23 10:04:39,196 cc_transformer_v4_lr01_do03_wd1e4 INFO threshold:0.25, f_score0.5587524418104162, auc0.8935038498710198, recall0.5350072122624312, precision0.5847033347769597, aupr0.5975305205138861
+2026-06-23 10:04:39,196 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 4
+2026-06-23 10:04:39,197 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:04:50,148 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 4 / 50, Step: 29 / 89, Loss(batch): 0.1407303512096405
+2026-06-23 10:05:00,611 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 4 / 50, Step: 59 / 89, Loss(batch): 0.14393125474452972
+2026-06-23 10:05:10,749 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 5
+2026-06-23 10:05:10,751 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:05:21,108 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 5 / 50, Step: 29 / 89, Loss(batch): 0.14777390658855438
+2026-06-23 10:05:31,243 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 5 / 50, Step: 59 / 89, Loss(batch): 0.13818836212158203
+2026-06-23 10:05:41,377 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 6
+2026-06-23 10:05:41,378 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:05:52,235 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 6 / 50, Step: 29 / 89, Loss(batch): 0.16668738424777985
+2026-06-23 10:06:02,789 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 6 / 50, Step: 59 / 89, Loss(batch): 0.12504766881465912
+2026-06-23 10:06:12,918 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 7
+2026-06-23 10:06:12,920 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:06:23,528 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 7 / 50, Step: 29 / 89, Loss(batch): 0.1451766937971115
+2026-06-23 10:06:35,037 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 7 / 50, Step: 59 / 89, Loss(batch): 0.13408440351486206
+2026-06-23 10:06:45,270 cc_transformer_v4_lr01_do03_wd1e4 INFO validating
+2026-06-23 10:06:48,240 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 9 / 26, Loss(batch): 0.14023347198963165
+2026-06-23 10:06:51,024 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 19 / 26, Loss(batch): 0.14290675520896912
+2026-06-23 10:11:33,876 cc_transformer_v4_lr01_do03_wd1e4 INFO ########valid metric###########
+2026-06-23 10:11:33,877 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch7, train_loss0.1346921684701791, valid_loss:0.14319571222250277
+2026-06-23 10:11:33,877 cc_transformer_v4_lr01_do03_wd1e4 INFO threshold:0.28, f_score0.5578601344924827, auc0.8909247110138849, recall0.5299348518712255, precision0.5888922160962463, aupr0.595218513097818
+2026-06-23 10:11:33,877 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 8
+2026-06-23 10:11:33,879 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:11:45,043 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 8 / 50, Step: 29 / 89, Loss(batch): 0.12299227714538574
+2026-06-23 10:11:56,506 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 8 / 50, Step: 59 / 89, Loss(batch): 0.13445201516151428
+2026-06-23 10:12:07,467 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 9
+2026-06-23 10:12:07,468 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:12:18,768 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 9 / 50, Step: 29 / 89, Loss(batch): 0.13334637880325317
+2026-06-23 10:12:29,896 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 9 / 50, Step: 59 / 89, Loss(batch): 0.12233677506446838
+2026-06-23 10:12:40,449 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 10
+2026-06-23 10:12:40,451 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:12:51,464 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 10 / 50, Step: 29 / 89, Loss(batch): 0.11658728867769241
+2026-06-23 10:13:02,389 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 10 / 50, Step: 59 / 89, Loss(batch): 0.13093511760234833
+2026-06-23 10:13:13,402 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 11
+2026-06-23 10:13:13,404 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:13:24,289 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 11 / 50, Step: 29 / 89, Loss(batch): 0.1285732537508011
+2026-06-23 10:13:35,322 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 11 / 50, Step: 59 / 89, Loss(batch): 0.11061748117208481
+2026-06-23 10:13:46,166 cc_transformer_v4_lr01_do03_wd1e4 INFO validating
+2026-06-23 10:13:48,621 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 9 / 26, Loss(batch): 0.17280322313308716
+2026-06-23 10:13:51,181 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 19 / 26, Loss(batch): 0.14160200953483582
+2026-06-23 10:18:21,975 cc_transformer_v4_lr01_do03_wd1e4 INFO ########valid metric###########
+2026-06-23 10:18:21,975 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch11, train_loss0.1146182468098201, valid_loss:0.15986033529043198
+2026-06-23 10:18:21,975 cc_transformer_v4_lr01_do03_wd1e4 INFO threshold:0.33, f_score0.5283318126391009, auc0.8713921637025472, recall0.49105203924738855, precision0.5717370441458733, aupr0.5502814428510081
+2026-06-23 10:18:21,975 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 12
+2026-06-23 10:18:21,976 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:18:32,998 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 12 / 50, Step: 29 / 89, Loss(batch): 0.10997889935970306
+2026-06-23 10:18:44,542 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 12 / 50, Step: 59 / 89, Loss(batch): 0.12211142480373383
+2026-06-23 10:18:55,085 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 13
+2026-06-23 10:18:55,087 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:19:05,541 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 13 / 50, Step: 29 / 89, Loss(batch): 0.1064157783985138
+2026-06-23 10:19:16,330 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 13 / 50, Step: 59 / 89, Loss(batch): 0.11057628691196442
+2026-06-23 10:19:26,717 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 14
+2026-06-23 10:19:26,718 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:19:37,410 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 14 / 50, Step: 29 / 89, Loss(batch): 0.10963868349790573
+2026-06-23 10:19:48,267 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 14 / 50, Step: 59 / 89, Loss(batch): 0.09920375794172287
+2026-06-23 10:19:58,322 cc_transformer_v4_lr01_do03_wd1e4 INFO epoch: 15
+2026-06-23 10:19:58,324 cc_transformer_v4_lr01_do03_wd1e4 INFO training
+2026-06-23 10:20:09,035 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 15 / 50, Step: 29 / 89, Loss(batch): 0.10275033116340637
+2026-06-23 10:20:19,959 cc_transformer_v4_lr01_do03_wd1e4 INFO Epoch: 15 / 50, Step: 59 / 89, Loss(batch): 0.09932585060596466
+2026-06-23 10:20:31,400 cc_transformer_v4_lr01_do03_wd1e4 INFO validating
+2026-06-23 10:20:33,810 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 9 / 26, Loss(batch): 0.18652869760990143
+2026-06-23 10:20:36,333 cc_transformer_v4_lr01_do03_wd1e4 INFO Valid Step: 19 / 26, Loss(batch): 0.19374746084213257

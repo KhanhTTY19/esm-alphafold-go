@@ -74,7 +74,7 @@ if __name__ == "__main__":
     label_network = label_network.to(device)
 
     # 载入/设置参数
-    epoch_num = 20
+    epoch_num = 50
     batch_size = args.batch_size
     learningrate = args.learningrate
     dropout = args.dropout
@@ -87,7 +87,7 @@ if __name__ == "__main__":
     # TODO: 这里的输入特征应该是one-hot(26)+node2vec(30) = 56
     # 但暂时没做特征拼接，先用node2vec特征试试
     model = SAGNetworkHierarchical(154, 512, labels_num, num_convs=6, pool_ratio=0.75, dropout=dropout).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=learningrate)
+    optimizer = optim.Adam(model.parameters(), lr=learningrate, weight_decay=1e-4)
     lr_scheduler = get_cosine_schedule_with_warmup(optimizer, num_warmup_steps=100, num_training_steps=epoch_num*len(train_dataloader))
     criterion = nn.BCEWithLogitsLoss()
     
@@ -185,3 +185,8 @@ if __name__ == "__main__":
     logger.info('best_scores[thresh,fmax,recall,precision,auc]: '+str(best_scores))
     logger.info('best_aupr: '+str(best_aupr))
     logger.info('best_score_dict: '+str(best_score_dict))
+
+
+# python train_Struct2GO2.py -branch bp -labels_num 610 -learningrate 0.0005 -dropout 0.1 -batch_size 128 -gpu 0 -exp_name transformer_v4 
+# python train_Struct2GO2.py -branch cc -labels_num 610 -learningrate 0.0005 -dropout 0.1 -batch_size 128 -gpu 0 -exp_name transformer_v4 
+# python train_Struct2GO2.py -branch mf -labels_num 610 -learningrate 0.0005 -dropout 0.1 -batch_size 128 -gpu 0 -exp_name transformer_v4 
