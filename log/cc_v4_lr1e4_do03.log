@@ -1,0 +1,116 @@
+2026-06-23 15:49:13,137 cc_v4_lr1e4_do03 INFO #########cc###########
+2026-06-23 15:49:13,137 cc_v4_lr1e4_do03 INFO ########start training###########
+2026-06-23 15:49:13,137 cc_v4_lr1e4_do03 INFO epoch: 0
+2026-06-23 15:49:13,138 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:49:23,752 cc_v4_lr1e4_do03 INFO Epoch: 0 / 20, Step: 29 / 89, Loss(batch): 0.531766414642334
+2026-06-23 15:49:33,355 cc_v4_lr1e4_do03 INFO Epoch: 0 / 20, Step: 59 / 89, Loss(batch): 0.14865119755268097
+2026-06-23 15:49:42,846 cc_v4_lr1e4_do03 INFO epoch: 1
+2026-06-23 15:49:42,847 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:49:52,495 cc_v4_lr1e4_do03 INFO Epoch: 1 / 20, Step: 29 / 89, Loss(batch): 0.13645853102207184
+2026-06-23 15:50:02,774 cc_v4_lr1e4_do03 INFO Epoch: 1 / 20, Step: 59 / 89, Loss(batch): 0.14255942404270172
+2026-06-23 15:50:12,687 cc_v4_lr1e4_do03 INFO epoch: 2
+2026-06-23 15:50:12,689 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:50:23,147 cc_v4_lr1e4_do03 INFO Epoch: 2 / 20, Step: 29 / 89, Loss(batch): 0.14633885025978088
+2026-06-23 15:50:33,118 cc_v4_lr1e4_do03 INFO Epoch: 2 / 20, Step: 59 / 89, Loss(batch): 0.1572902798652649
+2026-06-23 15:50:42,577 cc_v4_lr1e4_do03 INFO epoch: 3
+2026-06-23 15:50:42,578 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:50:52,273 cc_v4_lr1e4_do03 INFO Epoch: 3 / 20, Step: 29 / 89, Loss(batch): 0.15792179107666016
+2026-06-23 15:51:01,627 cc_v4_lr1e4_do03 INFO Epoch: 3 / 20, Step: 59 / 89, Loss(batch): 0.13568323850631714
+2026-06-23 15:51:10,473 cc_v4_lr1e4_do03 INFO validating
+2026-06-23 15:51:13,389 cc_v4_lr1e4_do03 INFO Valid Step: 9 / 26, Loss(batch): 0.13716760277748108
+2026-06-23 15:51:15,552 cc_v4_lr1e4_do03 INFO Valid Step: 19 / 26, Loss(batch): 0.1513424813747406
+2026-06-23 15:55:17,953 cc_v4_lr1e4_do03 INFO ########valid metric###########
+2026-06-23 15:55:17,953 cc_v4_lr1e4_do03 INFO epoch3, train_loss0.14419961603504888, valid_loss:0.13931782285754496
+2026-06-23 15:55:17,953 cc_v4_lr1e4_do03 INFO threshold:0.01, f_score0.5060816012317167, auc0.9005494867159121, recall0.3647185632539192, precision0.8263836511870128, aupr0.6131707966040443
+2026-06-23 15:55:17,953 cc_v4_lr1e4_do03 INFO epoch: 4
+2026-06-23 15:55:17,954 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:55:27,598 cc_v4_lr1e4_do03 INFO Epoch: 4 / 20, Step: 29 / 89, Loss(batch): 0.14399833977222443
+2026-06-23 15:55:37,135 cc_v4_lr1e4_do03 INFO Epoch: 4 / 20, Step: 59 / 89, Loss(batch): 0.15696120262145996
+2026-06-23 15:55:46,391 cc_v4_lr1e4_do03 INFO epoch: 5
+2026-06-23 15:55:46,393 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:55:55,977 cc_v4_lr1e4_do03 INFO Epoch: 5 / 20, Step: 29 / 89, Loss(batch): 0.13969719409942627
+2026-06-23 15:56:05,337 cc_v4_lr1e4_do03 INFO Epoch: 5 / 20, Step: 59 / 89, Loss(batch): 0.14901646971702576
+2026-06-23 15:56:14,341 cc_v4_lr1e4_do03 INFO epoch: 6
+2026-06-23 15:56:14,342 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:56:23,670 cc_v4_lr1e4_do03 INFO Epoch: 6 / 20, Step: 29 / 89, Loss(batch): 0.11959201097488403
+2026-06-23 15:56:32,890 cc_v4_lr1e4_do03 INFO Epoch: 6 / 20, Step: 59 / 89, Loss(batch): 0.12613268196582794
+2026-06-23 15:56:41,678 cc_v4_lr1e4_do03 INFO epoch: 7
+2026-06-23 15:56:41,679 cc_v4_lr1e4_do03 INFO training
+2026-06-23 15:56:50,932 cc_v4_lr1e4_do03 INFO Epoch: 7 / 20, Step: 29 / 89, Loss(batch): 0.110958993434906
+2026-06-23 15:57:00,349 cc_v4_lr1e4_do03 INFO Epoch: 7 / 20, Step: 59 / 89, Loss(batch): 0.12459755688905716
+2026-06-23 15:57:09,932 cc_v4_lr1e4_do03 INFO validating
+2026-06-23 15:57:12,221 cc_v4_lr1e4_do03 INFO Valid Step: 9 / 26, Loss(batch): 0.11092270910739899
+2026-06-23 15:57:14,542 cc_v4_lr1e4_do03 INFO Valid Step: 19 / 26, Loss(batch): 0.12240049242973328
+2026-06-23 16:01:20,409 cc_v4_lr1e4_do03 INFO ########valid metric###########
+2026-06-23 16:01:20,410 cc_v4_lr1e4_do03 INFO epoch7, train_loss0.11739804587337409, valid_loss:0.1164586260341681
+2026-06-23 16:01:20,410 cc_v4_lr1e4_do03 INFO threshold:0.01, f_score0.6116571518254762, auc0.9381944446329403, recall0.4942064133656696, precision0.8023366530276127, aupr0.6994602750861674
+2026-06-23 16:01:20,410 cc_v4_lr1e4_do03 INFO epoch: 8
+2026-06-23 16:01:20,411 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:01:29,941 cc_v4_lr1e4_do03 INFO Epoch: 8 / 20, Step: 29 / 89, Loss(batch): 0.114621102809906
+2026-06-23 16:01:39,680 cc_v4_lr1e4_do03 INFO Epoch: 8 / 20, Step: 59 / 89, Loss(batch): 0.11859451979398727
+2026-06-23 16:01:48,868 cc_v4_lr1e4_do03 INFO epoch: 9
+2026-06-23 16:01:48,869 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:01:58,167 cc_v4_lr1e4_do03 INFO Epoch: 9 / 20, Step: 29 / 89, Loss(batch): 0.09862510114908218
+2026-06-23 16:02:07,322 cc_v4_lr1e4_do03 INFO Epoch: 9 / 20, Step: 59 / 89, Loss(batch): 0.11970308423042297
+2026-06-23 16:02:16,127 cc_v4_lr1e4_do03 INFO epoch: 10
+2026-06-23 16:02:16,128 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:02:25,293 cc_v4_lr1e4_do03 INFO Epoch: 10 / 20, Step: 29 / 89, Loss(batch): 0.08947890251874924
+2026-06-23 16:02:34,415 cc_v4_lr1e4_do03 INFO Epoch: 10 / 20, Step: 59 / 89, Loss(batch): 0.10686315596103668
+2026-06-23 16:02:43,202 cc_v4_lr1e4_do03 INFO epoch: 11
+2026-06-23 16:02:43,203 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:02:52,291 cc_v4_lr1e4_do03 INFO Epoch: 11 / 20, Step: 29 / 89, Loss(batch): 0.09229610115289688
+2026-06-23 16:03:01,365 cc_v4_lr1e4_do03 INFO Epoch: 11 / 20, Step: 59 / 89, Loss(batch): 0.09558983892202377
+2026-06-23 16:03:10,299 cc_v4_lr1e4_do03 INFO validating
+2026-06-23 16:03:12,409 cc_v4_lr1e4_do03 INFO Valid Step: 9 / 26, Loss(batch): 0.10611819475889206
+2026-06-23 16:03:14,596 cc_v4_lr1e4_do03 INFO Valid Step: 19 / 26, Loss(batch): 0.11757482588291168
+2026-06-23 16:07:21,052 cc_v4_lr1e4_do03 INFO ########valid metric###########
+2026-06-23 16:07:21,052 cc_v4_lr1e4_do03 INFO epoch11, train_loss0.10086090126064386, valid_loss:0.1102342800452159
+2026-06-23 16:07:21,052 cc_v4_lr1e4_do03 INFO threshold:0.01, f_score0.6478701444924001, auc0.9456429978259935, recall0.5472601328324378, precision0.7938058997999679, aupr0.7286986082567418
+2026-06-23 16:07:21,053 cc_v4_lr1e4_do03 INFO epoch: 12
+2026-06-23 16:07:21,054 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:07:31,150 cc_v4_lr1e4_do03 INFO Epoch: 12 / 20, Step: 29 / 89, Loss(batch): 0.09854734688997269
+2026-06-23 16:07:40,996 cc_v4_lr1e4_do03 INFO Epoch: 12 / 20, Step: 59 / 89, Loss(batch): 0.0904202088713646
+2026-06-23 16:07:50,062 cc_v4_lr1e4_do03 INFO epoch: 13
+2026-06-23 16:07:50,063 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:07:59,331 cc_v4_lr1e4_do03 INFO Epoch: 13 / 20, Step: 29 / 89, Loss(batch): 0.11411066353321075
+2026-06-23 16:08:08,619 cc_v4_lr1e4_do03 INFO Epoch: 13 / 20, Step: 59 / 89, Loss(batch): 0.10192108899354935
+2026-06-23 16:08:17,691 cc_v4_lr1e4_do03 INFO epoch: 14
+2026-06-23 16:08:17,692 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:08:26,860 cc_v4_lr1e4_do03 INFO Epoch: 14 / 20, Step: 29 / 89, Loss(batch): 0.0836041122674942
+2026-06-23 16:08:37,059 cc_v4_lr1e4_do03 INFO Epoch: 14 / 20, Step: 59 / 89, Loss(batch): 0.09922177344560623
+2026-06-23 16:08:47,767 cc_v4_lr1e4_do03 INFO epoch: 15
+2026-06-23 16:08:47,769 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:08:57,123 cc_v4_lr1e4_do03 INFO Epoch: 15 / 20, Step: 29 / 89, Loss(batch): 0.08048784732818604
+2026-06-23 16:09:06,241 cc_v4_lr1e4_do03 INFO Epoch: 15 / 20, Step: 59 / 89, Loss(batch): 0.07459967583417892
+2026-06-23 16:09:15,193 cc_v4_lr1e4_do03 INFO validating
+2026-06-23 16:09:17,298 cc_v4_lr1e4_do03 INFO Valid Step: 9 / 26, Loss(batch): 0.1181739792227745
+2026-06-23 16:09:19,362 cc_v4_lr1e4_do03 INFO Valid Step: 19 / 26, Loss(batch): 0.10691223293542862
+2026-06-23 16:13:25,545 cc_v4_lr1e4_do03 INFO ########valid metric###########
+2026-06-23 16:13:25,545 cc_v4_lr1e4_do03 INFO epoch15, train_loss0.08962587208560344, valid_loss:0.11265926750806662
+2026-06-23 16:13:25,546 cc_v4_lr1e4_do03 INFO threshold:0.01, f_score0.6516651665166516, auc0.9455220715016599, recall0.5623345538700525, precision0.7747373938110109, aupr0.726542552122805
+2026-06-23 16:13:25,546 cc_v4_lr1e4_do03 INFO epoch: 16
+2026-06-23 16:13:25,547 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:13:35,543 cc_v4_lr1e4_do03 INFO Epoch: 16 / 20, Step: 29 / 89, Loss(batch): 0.09683878719806671
+2026-06-23 16:13:45,299 cc_v4_lr1e4_do03 INFO Epoch: 16 / 20, Step: 59 / 89, Loss(batch): 0.09222667664289474
+2026-06-23 16:13:54,172 cc_v4_lr1e4_do03 INFO epoch: 17
+2026-06-23 16:13:54,173 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:14:03,431 cc_v4_lr1e4_do03 INFO Epoch: 17 / 20, Step: 29 / 89, Loss(batch): 0.09197446703910828
+2026-06-23 16:14:12,595 cc_v4_lr1e4_do03 INFO Epoch: 17 / 20, Step: 59 / 89, Loss(batch): 0.0862278863787651
+2026-06-23 16:14:21,399 cc_v4_lr1e4_do03 INFO epoch: 18
+2026-06-23 16:14:21,400 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:14:30,683 cc_v4_lr1e4_do03 INFO Epoch: 18 / 20, Step: 29 / 89, Loss(batch): 0.09246112406253815
+2026-06-23 16:14:40,340 cc_v4_lr1e4_do03 INFO Epoch: 18 / 20, Step: 59 / 89, Loss(batch): 0.09758862853050232
+2026-06-23 16:14:49,320 cc_v4_lr1e4_do03 INFO epoch: 19
+2026-06-23 16:14:49,321 cc_v4_lr1e4_do03 INFO training
+2026-06-23 16:14:58,587 cc_v4_lr1e4_do03 INFO Epoch: 19 / 20, Step: 29 / 89, Loss(batch): 0.08607865124940872
+2026-06-23 16:15:07,950 cc_v4_lr1e4_do03 INFO Epoch: 19 / 20, Step: 59 / 89, Loss(batch): 0.08762283623218536
+2026-06-23 16:15:16,868 cc_v4_lr1e4_do03 INFO validating
+2026-06-23 16:15:19,023 cc_v4_lr1e4_do03 INFO Valid Step: 9 / 26, Loss(batch): 0.09788935631513596
+2026-06-23 16:15:21,189 cc_v4_lr1e4_do03 INFO Valid Step: 19 / 26, Loss(batch): 0.11552756279706955
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO ########valid metric###########
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO epoch19, train_loss0.08639184921310189, valid_loss:0.11382746066038425
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO threshold:0.01, f_score0.6507624246118607, auc0.9447585485866646, recall0.558435176819313, precision0.7796662683131943, aupr0.7258987248374941
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO best_fscore: 0.6516651665166516
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO best_scores[thresh,fmax,recall,precision,auc]: [0.01, 0.6516651665166516, 0.5623345538700525, 0.7747373938110109, 0.9455220715016599]
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO best_aupr: 0.726542552122805
+2026-06-23 16:19:24,506 cc_v4_lr1e4_do03 INFO best_score_dict: {0.01: [0.6516651665166516, 0.5623345538700525, 0.7747373938110109, 0.9455220715016599]}

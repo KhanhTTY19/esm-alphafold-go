@@ -41,11 +41,39 @@ def create_logger(branch_name):
     logger.addHandler(handler2)
     return logger
 
+
+class EarlyStopping:
+    """
+    Dừng training sớm khi metric không cải thiện sau `patience` lần validation.
+    
+    Args:
+        patience (int): Số lần validation cho phép không cải thiện trước khi dừng.
+        min_delta (float): Mức cải thiện tối thiểu được coi là có ý nghĩa.
+        monitor (str): Metric theo dõi, 'fscore' hoặc 'aupr'.
+    """
+    def __init__(self, patience=3, min_delta=1e-4, monitor='fscore'):
+        self.patience = patience
+        self.min_delta = min_delta
+        self.monitor = monitor
+        self.counter = 0
+        self.best_value = 0.0
+        self.should_stop = False
+
+    def step(self, current_value):
+        if current_value > self.best_value + self.min_delta:
+            self.best_value = current_value
+            self.counter = 0
+        else:
+            self.counter += 1
+            if self.counter >= self.patience:
+                self.should_stop = True
+
+
 warnings.filterwarnings('ignore')
 Thresholds = [x/100 for x in range(1,100)]
 
 if __name__ == "__main__":
-    #参数设置
+    # 参数设置
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-batch_size', '--batch_size', type=int, default=64,  help="the number of the bach size")
     parser.add_argument('-learningrate', '--learningrate',type=float,default=1e-4)
@@ -54,17 +82,25 @@ if __name__ == "__main__":
     parser.add_argument('-labels_num', '--labels_num',type=int,default=328)
     parser.add_argument('-gpu', '--gpu',type=str,default='0')
     parser.add_argument('-exp_name', '--exp_name',type=str,default='')
-    
+    # Early stopping args
+    parser.add_argument('-patience', '--patience', type=int, default=3,
+                        help="Số lần validation không cải thiện trước khi dừng (0 = tắt early stopping)")
+    parser.add_argument('-min_delta', '--min_delta', type=float, default=1e-4,
+                        help="Mức cải thiện tối thiểu được tính là có ý nghĩa")
+    parser.add_argument('-es_monitor', '--es_monitor', type=str, default='fscore',
+                        choices=['fscore', 'aupr'],
+                        help="Metric dùng để theo dõi early stopping")
+
     args = parser.parse_args()
     device = "cuda:" + args.gpu if torch.cuda.is_available() else "cpu"
-    # 根据选择的标签大类自动填写训练文件路径
+
     train_data_path = 'divided_data/'+args.branch+'_train_dataset'
     valid_data_path = 'divided_data/'+args.branch+'_valid_dataset'
     label_network_path = 'processed_data/label_'+args.branch+'_network'
-    
+
     exp_name = args.branch + ("_" + args.exp_name if args.exp_name else "")
     logger = create_logger(exp_name)
-    
+
     with open(train_data_path,'rb')as f:
         train_dataset = pickle.load(f)
     with open(valid_data_path,'rb')as f:
@@ -73,32 +109,39 @@ if __name__ == "__main__":
         label_network=pickle.load(f)
     label_network = label_network.to(device)
 
-    # 载入/设置参数
-    epoch_num = 20
+    epoch_num = 50
     batch_size = args.batch_size
     learningrate = args.learningrate
     dropout = args.dropout
     labels_num = args.labels_num
-    
-    # 加载数据
-    train_dataloader = GraphDataLoader(dataset=train_dataset, batch_size = batch_size, drop_last = False, shuffle = True)
-    valid_dataloader = GraphDataLoader(dataset=valid_dataset, batch_size = batch_size, drop_last = False, shuffle = True)
-    
-    # TODO: 这里的输入特征应该是one-hot(26)+node2vec(30) = 56
-    # 但暂时没做特征拼接，先用node2vec特征试试
+
+    train_dataloader = GraphDataLoader(dataset=train_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
+    valid_dataloader = GraphDataLoader(dataset=valid_dataset, batch_size=batch_size, drop_last=False, shuffle=True)
+
     model = SAGNetworkHierarchical(154, 512, labels_num, num_convs=6, pool_ratio=0.75, dropout=dropout).to(device)
     optimizer = optim.Adam(model.parameters(), lr=learningrate)
     lr_scheduler = get_cosine_schedule_with_warmup(optimizer, num_warmup_steps=100, num_training_steps=epoch_num*len(train_dataloader))
-    criterion = nn.CrossEntropyLoss()
-    
+    criterion = nn.BCEWithLogitsLoss()
+
     best_fscore = 0
     best_aupr = 0
     best_scores = []
     best_score_dict = {}
+
+    # Khởi tạo early stopping (patience=0 nghĩa là tắt)
+    early_stopper = EarlyStopping(
+        patience=args.patience,
+        min_delta=args.min_delta,
+        monitor=args.es_monitor
+    ) if args.patience > 0 else None
+
     logger.info('#########'+args.branch+'###########')
     logger.info('########start training###########')
+    if early_stopper:
+        logger.info(f'Early stopping: patience={args.patience}, min_delta={args.min_delta}, monitor={args.es_monitor}')
+
     for epoch in range(epoch_num):
-        print("epoch:",epoch)
+        print("epoch:", epoch)
         logger.info("epoch: "+str(epoch))
         model.train()
         train_loss = 0
@@ -107,29 +150,23 @@ if __name__ == "__main__":
         for i,(pids, graphs, labels, seq_feats) in tqdm(enumerate(train_dataloader)):
             graphs = graphs.to(device)
             seq_feats = seq_feats.to(device)
-            labels = labels.to(device)
+            labels = labels.to(device).float()
             labels = torch.squeeze(labels)
             if len(labels.shape)==1:
                 labels = labels.unsqueeze(0)
-            #print(labels, "\n",labels.shape)
+
             optimizer.zero_grad()
             logits = model(graphs,seq_feats,label_network)
-            '''
-            print(f"this is the logits shape : {logits.shape}")
-            print("this is logits :")
-            print(logits)
-            '''
             loss = criterion(logits,labels)
             loss.backward()
             optimizer.step()
             lr_scheduler.step()
-            
-            # 累加计算平均loss
-            train_loss+=loss.item()
+
+            train_loss += loss.item()
             if i%30 == 29:
                 logger.info(f'Epoch: {epoch} / {epoch_num}, Step: {i} / {len(train_dataloader)}, Loss(batch): {loss.item()}')
-        
-        # 每四轮进行一次验证
+
+        # Validation mỗi 4 epoch
         if epoch%4==3:
             model.eval()
             print("validating")
@@ -145,12 +182,10 @@ if __name__ == "__main__":
                     labels = torch.squeeze(labels)
                     if len(labels.shape)==1:
                         labels = labels.unsqueeze(0)
-                    
+
                     logits = model(graphs,seq_feats,label_network)
-                    logits = F.sigmoid(logits)
-                    
                     loss = criterion(logits,labels)
-                    
+
                     valid_loss += loss.item()
                     pred += logits.tolist()
                     actual += labels.tolist()
@@ -164,25 +199,36 @@ if __name__ == "__main__":
             each_best_fcore = 0
             each_best_scores = []
             for thresh in tqdm(Thresholds):
-                f_score, precision, recall = calculate_performance(actual, pred, label_network,threshold=thresh)
+                f_score, precision, recall = calculate_performance(actual, pred, label_network, threshold=thresh)
                 if f_score >= each_best_fcore:
                     each_best_fcore = f_score
                     each_best_scores = [thresh, f_score, recall, precision, auc_score]
                     scores = [f_score, recall, precision, auc_score]
                     score_dict[thresh] = scores
+
             if each_best_fcore >= best_fscore:
                 best_fscore = each_best_fcore
                 best_scores = each_best_scores
                 best_score_dict = score_dict
                 best_aupr = aupr
                 torch.save(model, 'save_models/bestmodel_{}_{}_{}_{}_{}.pkl'.format(exp_name,batch_size,learningrate,dropout,args.gpu))
-            
+
             thresh, f_score, recall = each_best_scores[0], each_best_scores[1], each_best_scores[2]
             precision, auc_score = each_best_scores[3], each_best_scores[4]
             logger.info('########valid metric###########')
             logger.info('epoch{}, train_loss{}, valid_loss:{}'.format(epoch, train_loss/len(train_dataloader), valid_loss/len(valid_dataloader)))
             logger.info('threshold:{}, f_score{}, auc{}, recall{}, precision{}, aupr{}'.format(thresh, f_score, auc_score, recall, precision, aupr))
-        
+
+            # Kiểm tra early stopping
+            if early_stopper:
+                monitor_value = each_best_fcore if args.es_monitor == 'fscore' else aupr
+                early_stopper.step(monitor_value)
+                logger.info(f'Early stopping counter: {early_stopper.counter}/{early_stopper.patience} (best {args.es_monitor}: {early_stopper.best_value:.4f})')
+                if early_stopper.should_stop:
+                    logger.info(f'Early stopping triggered at epoch {epoch}. No improvement in {args.es_monitor} for {args.patience} validations.')
+                    print(f'Early stopping triggered at epoch {epoch}.')
+                    break
+
     logger.info('best_fscore: '+str(best_fscore))
     logger.info('best_scores[thresh,fmax,recall,precision,auc]: '+str(best_scores))
     logger.info('best_aupr: '+str(best_aupr))

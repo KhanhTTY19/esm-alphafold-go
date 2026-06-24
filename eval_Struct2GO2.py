@@ -48,6 +48,9 @@ if __name__ == "__main__":
     parser.add_argument('-batch', '--batch', type = str, default = '1')
     parser.add_argument('-gpu', '--gpu', type=str, default='0')
     parser.add_argument('-exp_name', '--exp_name', type=str, default='')
+    parser.add_argument('-batch_size', '--batch_size', type=int, default=128)
+    parser.add_argument('-learningrate', '--learningrate', type=float, default=0.0001)
+    parser.add_argument('-dropout', '--dropout', type=float, default=0.1)
     args = parser.parse_args()
     device = "cuda:" + args.gpu if torch.cuda.is_available() else "cpu"
     
@@ -55,7 +58,9 @@ if __name__ == "__main__":
     test_data_path = 'divided_data/'+args.branch+'_test_dataset'
     label_network_path = 'processed_data/label_'+args.branch+'_network'
     term2idx_path = 'processed_data/'+args.branch+'_term2idx.json'
-    model_path = 'save_models/bestmodel_'+args.branch+'_'+args.exp_name+'_32_0.0001_0.2_1.pkl'
+    model_path = 'save_models/bestmodel_{}_{}_{}_{}_{}_{}.pkl'.format(
+        args.branch, args.exp_name, args.batch_size, args.learningrate, args.dropout, args.gpu
+    )
     
     logger = create_logger(args.branch)
     
@@ -75,7 +80,7 @@ if __name__ == "__main__":
 
     batch_size = 32
     test_dataloader = GraphDataLoader(dataset=test_dataset, batch_size = batch_size, drop_last = False, shuffle = False)
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.BCEWithLogitsLoss()
     logger.info('#########'+args.branch+'###########')
     logger.info('########start testing###########') 
 
@@ -96,7 +101,7 @@ if __name__ == "__main__":
                 labels = labels.unsqueeze(0)
             
             logits = model(graphs,seq_feats,label_network)
-            logits = F.sigmoid(logits)
+            # logits = F.sigmoid(logits)
             
             loss = criterion(logits,labels)
             
