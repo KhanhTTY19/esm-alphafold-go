@@ -20,3 +20,294 @@
 2026-06-24 02:07:12,173 bp_v1_lr1e4_do01 INFO validating
 2026-06-24 02:07:14,995 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.181033194065094
 2026-06-24 02:07:17,976 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.15897677838802338
+2026-06-24 04:17:26,015 bp_v1_lr1e4_do01 INFO #########bp###########
+2026-06-24 04:17:26,016 bp_v1_lr1e4_do01 INFO ########start training###########
+2026-06-24 04:17:26,016 bp_v1_lr1e4_do01 INFO Early stopping: patience=3, min_delta=0.0001, monitor=fscore
+2026-06-24 04:17:26,016 bp_v1_lr1e4_do01 INFO epoch: 0
+2026-06-24 04:17:26,017 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:17:38,813 bp_v1_lr1e4_do01 INFO Epoch: 0 / 50, Step: 29 / 82, Loss(batch): 0.573602020740509
+2026-06-24 04:17:50,600 bp_v1_lr1e4_do01 INFO Epoch: 0 / 50, Step: 59 / 82, Loss(batch): 0.21129107475280762
+2026-06-24 04:17:58,455 bp_v1_lr1e4_do01 INFO epoch: 1
+2026-06-24 04:17:58,457 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:18:09,268 bp_v1_lr1e4_do01 INFO Epoch: 1 / 50, Step: 29 / 82, Loss(batch): 0.1950756162405014
+2026-06-24 04:18:19,883 bp_v1_lr1e4_do01 INFO Epoch: 1 / 50, Step: 59 / 82, Loss(batch): 0.17904815077781677
+2026-06-24 04:18:27,480 bp_v1_lr1e4_do01 INFO epoch: 2
+2026-06-24 04:18:27,482 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:18:37,772 bp_v1_lr1e4_do01 INFO Epoch: 2 / 50, Step: 29 / 82, Loss(batch): 0.19759374856948853
+2026-06-24 04:18:47,914 bp_v1_lr1e4_do01 INFO Epoch: 2 / 50, Step: 59 / 82, Loss(batch): 0.19537056982517242
+2026-06-24 04:18:55,404 bp_v1_lr1e4_do01 INFO epoch: 3
+2026-06-24 04:18:55,406 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:19:05,647 bp_v1_lr1e4_do01 INFO Epoch: 3 / 50, Step: 29 / 82, Loss(batch): 0.1771477311849594
+2026-06-24 04:19:16,103 bp_v1_lr1e4_do01 INFO Epoch: 3 / 50, Step: 59 / 82, Loss(batch): 0.17697326838970184
+2026-06-24 04:19:23,745 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 04:19:26,118 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.1795484870672226
+2026-06-24 04:19:28,697 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.18822863698005676
+2026-06-24 04:27:33,466 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 04:27:33,467 bp_v1_lr1e4_do01 INFO epoch3, train_loss0.1895994425910275, valid_loss:0.1891663825760285
+2026-06-24 04:27:33,467 bp_v1_lr1e4_do01 INFO threshold:0.6, f_score0.18345140896527623, auc0.7858642972956976, recall0.10409380971265818, precision0.7719919786096257, aupr0.3285886323163048
+2026-06-24 04:27:33,467 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.1835)
+2026-06-24 04:27:33,467 bp_v1_lr1e4_do01 INFO epoch: 4
+2026-06-24 04:27:33,468 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:27:44,492 bp_v1_lr1e4_do01 INFO Epoch: 4 / 50, Step: 29 / 82, Loss(batch): 0.1889173984527588
+2026-06-24 04:27:55,190 bp_v1_lr1e4_do01 INFO Epoch: 4 / 50, Step: 59 / 82, Loss(batch): 0.1831648051738739
+2026-06-24 04:28:03,158 bp_v1_lr1e4_do01 INFO epoch: 5
+2026-06-24 04:28:03,160 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:28:13,626 bp_v1_lr1e4_do01 INFO Epoch: 5 / 50, Step: 29 / 82, Loss(batch): 0.19668522477149963
+2026-06-24 04:28:23,869 bp_v1_lr1e4_do01 INFO Epoch: 5 / 50, Step: 59 / 82, Loss(batch): 0.16590173542499542
+2026-06-24 04:28:31,373 bp_v1_lr1e4_do01 INFO epoch: 6
+2026-06-24 04:28:31,375 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:28:41,654 bp_v1_lr1e4_do01 INFO Epoch: 6 / 50, Step: 29 / 82, Loss(batch): 0.1615770161151886
+2026-06-24 04:28:51,764 bp_v1_lr1e4_do01 INFO Epoch: 6 / 50, Step: 59 / 82, Loss(batch): 0.1793980747461319
+2026-06-24 04:28:59,473 bp_v1_lr1e4_do01 INFO epoch: 7
+2026-06-24 04:28:59,475 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:29:10,202 bp_v1_lr1e4_do01 INFO Epoch: 7 / 50, Step: 29 / 82, Loss(batch): 0.2103310525417328
+2026-06-24 04:29:20,572 bp_v1_lr1e4_do01 INFO Epoch: 7 / 50, Step: 59 / 82, Loss(batch): 0.18162940442562103
+2026-06-24 04:29:28,339 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 04:29:30,997 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.16967065632343292
+2026-06-24 04:29:33,647 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.17821885645389557
+2026-06-24 04:38:03,032 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 04:38:03,033 bp_v1_lr1e4_do01 INFO epoch7, train_loss0.1706433132654283, valid_loss:0.16974854779740176
+2026-06-24 04:38:03,033 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.29363223865813065, auc0.8426112659467712, recall0.18168871903955006, precision0.7649223997267863, aupr0.4213335335910532
+2026-06-24 04:38:03,033 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.2936)
+2026-06-24 04:38:03,033 bp_v1_lr1e4_do01 INFO epoch: 8
+2026-06-24 04:38:03,035 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:38:13,345 bp_v1_lr1e4_do01 INFO Epoch: 8 / 50, Step: 29 / 82, Loss(batch): 0.14643429219722748
+2026-06-24 04:38:23,588 bp_v1_lr1e4_do01 INFO Epoch: 8 / 50, Step: 59 / 82, Loss(batch): 0.17367513477802277
+2026-06-24 04:38:30,956 bp_v1_lr1e4_do01 INFO epoch: 9
+2026-06-24 04:38:30,958 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:38:41,275 bp_v1_lr1e4_do01 INFO Epoch: 9 / 50, Step: 29 / 82, Loss(batch): 0.16464130580425262
+2026-06-24 04:38:51,456 bp_v1_lr1e4_do01 INFO Epoch: 9 / 50, Step: 59 / 82, Loss(batch): 0.16263510286808014
+2026-06-24 04:38:59,148 bp_v1_lr1e4_do01 INFO epoch: 10
+2026-06-24 04:38:59,149 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:39:09,198 bp_v1_lr1e4_do01 INFO Epoch: 10 / 50, Step: 29 / 82, Loss(batch): 0.1458420753479004
+2026-06-24 04:39:19,377 bp_v1_lr1e4_do01 INFO Epoch: 10 / 50, Step: 59 / 82, Loss(batch): 0.14650578796863556
+2026-06-24 04:39:26,854 bp_v1_lr1e4_do01 INFO epoch: 11
+2026-06-24 04:39:26,856 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:39:36,979 bp_v1_lr1e4_do01 INFO Epoch: 11 / 50, Step: 29 / 82, Loss(batch): 0.14379923045635223
+2026-06-24 04:39:47,087 bp_v1_lr1e4_do01 INFO Epoch: 11 / 50, Step: 59 / 82, Loss(batch): 0.13367041945457458
+2026-06-24 04:39:54,356 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 04:39:56,709 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.17707321047782898
+2026-06-24 04:39:59,036 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.16477183997631073
+2026-06-24 04:47:48,989 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 04:47:48,989 bp_v1_lr1e4_do01 INFO epoch11, train_loss0.14737101562502908, valid_loss:0.15760013088583946
+2026-06-24 04:47:48,989 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.40131468927280445, auc0.8743041061089458, recall0.28118578072610595, precision0.7006468130979653, aupr0.4852247595896887
+2026-06-24 04:47:48,989 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4013)
+2026-06-24 04:47:48,990 bp_v1_lr1e4_do01 INFO epoch: 12
+2026-06-24 04:47:48,991 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:47:59,425 bp_v1_lr1e4_do01 INFO Epoch: 12 / 50, Step: 29 / 82, Loss(batch): 0.1331474483013153
+2026-06-24 04:48:09,738 bp_v1_lr1e4_do01 INFO Epoch: 12 / 50, Step: 59 / 82, Loss(batch): 0.13240297138690948
+2026-06-24 04:48:17,153 bp_v1_lr1e4_do01 INFO epoch: 13
+2026-06-24 04:48:17,155 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:48:27,076 bp_v1_lr1e4_do01 INFO Epoch: 13 / 50, Step: 29 / 82, Loss(batch): 0.13980700075626373
+2026-06-24 04:48:36,950 bp_v1_lr1e4_do01 INFO Epoch: 13 / 50, Step: 59 / 82, Loss(batch): 0.1255984902381897
+2026-06-24 04:48:44,394 bp_v1_lr1e4_do01 INFO epoch: 14
+2026-06-24 04:48:44,396 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:48:54,295 bp_v1_lr1e4_do01 INFO Epoch: 14 / 50, Step: 29 / 82, Loss(batch): 0.14202357828617096
+2026-06-24 04:49:04,425 bp_v1_lr1e4_do01 INFO Epoch: 14 / 50, Step: 59 / 82, Loss(batch): 0.12914928793907166
+2026-06-24 04:49:11,882 bp_v1_lr1e4_do01 INFO epoch: 15
+2026-06-24 04:49:11,884 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:49:22,015 bp_v1_lr1e4_do01 INFO Epoch: 15 / 50, Step: 29 / 82, Loss(batch): 0.12901395559310913
+2026-06-24 04:49:32,383 bp_v1_lr1e4_do01 INFO Epoch: 15 / 50, Step: 59 / 82, Loss(batch): 0.1411847025156021
+2026-06-24 04:49:41,547 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 04:49:44,008 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.14508982002735138
+2026-06-24 04:49:46,352 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.16719414293766022
+2026-06-24 04:57:47,873 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 04:57:47,874 bp_v1_lr1e4_do01 INFO epoch15, train_loss0.13421075136923208, valid_loss:0.1593725581963857
+2026-06-24 04:57:47,875 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.4224123013028108, auc0.8743273819815014, recall0.30801817067455023, precision0.6719757747365109, aupr0.4904740871617152
+2026-06-24 04:57:47,875 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4224)
+2026-06-24 04:57:47,875 bp_v1_lr1e4_do01 INFO epoch: 16
+2026-06-24 04:57:47,877 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:57:58,701 bp_v1_lr1e4_do01 INFO Epoch: 16 / 50, Step: 29 / 82, Loss(batch): 0.11880093067884445
+2026-06-24 04:58:09,140 bp_v1_lr1e4_do01 INFO Epoch: 16 / 50, Step: 59 / 82, Loss(batch): 0.12688016891479492
+2026-06-24 04:58:16,904 bp_v1_lr1e4_do01 INFO epoch: 17
+2026-06-24 04:58:16,906 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:58:26,704 bp_v1_lr1e4_do01 INFO Epoch: 17 / 50, Step: 29 / 82, Loss(batch): 0.12281440198421478
+2026-06-24 04:58:36,642 bp_v1_lr1e4_do01 INFO Epoch: 17 / 50, Step: 59 / 82, Loss(batch): 0.13595740497112274
+2026-06-24 04:58:43,991 bp_v1_lr1e4_do01 INFO epoch: 18
+2026-06-24 04:58:43,993 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:58:53,931 bp_v1_lr1e4_do01 INFO Epoch: 18 / 50, Step: 29 / 82, Loss(batch): 0.12300607562065125
+2026-06-24 04:59:03,793 bp_v1_lr1e4_do01 INFO Epoch: 18 / 50, Step: 59 / 82, Loss(batch): 0.12473872303962708
+2026-06-24 04:59:11,209 bp_v1_lr1e4_do01 INFO epoch: 19
+2026-06-24 04:59:11,211 bp_v1_lr1e4_do01 INFO training
+2026-06-24 04:59:21,376 bp_v1_lr1e4_do01 INFO Epoch: 19 / 50, Step: 29 / 82, Loss(batch): 0.12536251544952393
+2026-06-24 04:59:31,549 bp_v1_lr1e4_do01 INFO Epoch: 19 / 50, Step: 59 / 82, Loss(batch): 0.11123743653297424
+2026-06-24 04:59:38,829 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 04:59:41,213 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.1904587596654892
+2026-06-24 04:59:43,525 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.18059296905994415
+2026-06-24 05:07:36,992 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:07:36,993 bp_v1_lr1e4_do01 INFO epoch19, train_loss0.12352916680094672, valid_loss:0.16079341309765974
+2026-06-24 05:07:36,993 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.4288703574536903, auc0.8737066237741896, recall0.31311965966038147, precision0.6803893534930179, aupr0.49633845102166513
+2026-06-24 05:07:36,994 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4289)
+2026-06-24 05:07:36,994 bp_v1_lr1e4_do01 INFO epoch: 20
+2026-06-24 05:07:36,995 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:07:47,484 bp_v1_lr1e4_do01 INFO Epoch: 20 / 50, Step: 29 / 82, Loss(batch): 0.11317101120948792
+2026-06-24 05:07:57,568 bp_v1_lr1e4_do01 INFO Epoch: 20 / 50, Step: 59 / 82, Loss(batch): 0.13194912672042847
+2026-06-24 05:08:04,706 bp_v1_lr1e4_do01 INFO epoch: 21
+2026-06-24 05:08:04,708 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:08:14,650 bp_v1_lr1e4_do01 INFO Epoch: 21 / 50, Step: 29 / 82, Loss(batch): 0.11624465882778168
+2026-06-24 05:08:24,566 bp_v1_lr1e4_do01 INFO Epoch: 21 / 50, Step: 59 / 82, Loss(batch): 0.12883983552455902
+2026-06-24 05:08:31,741 bp_v1_lr1e4_do01 INFO epoch: 22
+2026-06-24 05:08:31,743 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:08:41,491 bp_v1_lr1e4_do01 INFO Epoch: 22 / 50, Step: 29 / 82, Loss(batch): 0.11436662822961807
+2026-06-24 05:08:51,351 bp_v1_lr1e4_do01 INFO Epoch: 22 / 50, Step: 59 / 82, Loss(batch): 0.12138772010803223
+2026-06-24 05:08:58,635 bp_v1_lr1e4_do01 INFO epoch: 23
+2026-06-24 05:08:58,636 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:09:08,682 bp_v1_lr1e4_do01 INFO Epoch: 23 / 50, Step: 29 / 82, Loss(batch): 0.10991834849119186
+2026-06-24 05:09:18,773 bp_v1_lr1e4_do01 INFO Epoch: 23 / 50, Step: 59 / 82, Loss(batch): 0.1067977249622345
+2026-06-24 05:09:26,110 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:09:28,552 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.17129331827163696
+2026-06-24 05:09:30,941 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.18515534698963165
+2026-06-24 05:17:17,950 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:17:17,951 bp_v1_lr1e4_do01 INFO epoch23, train_loss0.11550349687657706, valid_loss:0.1652490682899952
+2026-06-24 05:17:17,951 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.44483028144223485, auc0.8715278925301266, recall0.3359862277823845, precision0.6579881030130796, aupr0.49752763863864696
+2026-06-24 05:17:17,951 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4448)
+2026-06-24 05:17:17,951 bp_v1_lr1e4_do01 INFO epoch: 24
+2026-06-24 05:17:17,953 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:17:28,546 bp_v1_lr1e4_do01 INFO Epoch: 24 / 50, Step: 29 / 82, Loss(batch): 0.12063499540090561
+2026-06-24 05:17:38,523 bp_v1_lr1e4_do01 INFO Epoch: 24 / 50, Step: 59 / 82, Loss(batch): 0.10406957566738129
+2026-06-24 05:17:45,878 bp_v1_lr1e4_do01 INFO epoch: 25
+2026-06-24 05:17:45,880 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:17:55,947 bp_v1_lr1e4_do01 INFO Epoch: 25 / 50, Step: 29 / 82, Loss(batch): 0.12201268970966339
+2026-06-24 05:18:05,855 bp_v1_lr1e4_do01 INFO Epoch: 25 / 50, Step: 59 / 82, Loss(batch): 0.1153959184885025
+2026-06-24 05:18:13,043 bp_v1_lr1e4_do01 INFO epoch: 26
+2026-06-24 05:18:13,045 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:18:22,925 bp_v1_lr1e4_do01 INFO Epoch: 26 / 50, Step: 29 / 82, Loss(batch): 0.11692994087934494
+2026-06-24 05:18:32,753 bp_v1_lr1e4_do01 INFO Epoch: 26 / 50, Step: 59 / 82, Loss(batch): 0.1298648566007614
+2026-06-24 05:18:40,051 bp_v1_lr1e4_do01 INFO epoch: 27
+2026-06-24 05:18:40,052 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:18:49,872 bp_v1_lr1e4_do01 INFO Epoch: 27 / 50, Step: 29 / 82, Loss(batch): 0.09953474253416061
+2026-06-24 05:18:59,952 bp_v1_lr1e4_do01 INFO Epoch: 27 / 50, Step: 59 / 82, Loss(batch): 0.09982190281152725
+2026-06-24 05:19:07,129 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:19:09,609 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.16265001893043518
+2026-06-24 05:19:11,964 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.2047731876373291
+2026-06-24 05:26:58,480 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:26:58,481 bp_v1_lr1e4_do01 INFO epoch27, train_loss0.10854754088128485, valid_loss:0.17329700104892254
+2026-06-24 05:26:58,481 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.4413802299575118, auc0.8676311292343912, recall0.32818076936943436, precision0.6737911508355077, aupr0.49654623444806734
+2026-06-24 05:26:58,481 bp_v1_lr1e4_do01 INFO Early stopping counter: 1/3 (best fscore: 0.4448)
+2026-06-24 05:26:58,481 bp_v1_lr1e4_do01 INFO epoch: 28
+2026-06-24 05:26:58,482 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:27:08,750 bp_v1_lr1e4_do01 INFO Epoch: 28 / 50, Step: 29 / 82, Loss(batch): 0.11287226527929306
+2026-06-24 05:27:18,722 bp_v1_lr1e4_do01 INFO Epoch: 28 / 50, Step: 59 / 82, Loss(batch): 0.11204361170530319
+2026-06-24 05:27:25,951 bp_v1_lr1e4_do01 INFO epoch: 29
+2026-06-24 05:27:25,953 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:27:35,747 bp_v1_lr1e4_do01 INFO Epoch: 29 / 50, Step: 29 / 82, Loss(batch): 0.10716970264911652
+2026-06-24 05:27:45,607 bp_v1_lr1e4_do01 INFO Epoch: 29 / 50, Step: 59 / 82, Loss(batch): 0.1093638688325882
+2026-06-24 05:27:52,881 bp_v1_lr1e4_do01 INFO epoch: 30
+2026-06-24 05:27:52,882 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:28:02,839 bp_v1_lr1e4_do01 INFO Epoch: 30 / 50, Step: 29 / 82, Loss(batch): 0.10552045702934265
+2026-06-24 05:28:12,572 bp_v1_lr1e4_do01 INFO Epoch: 30 / 50, Step: 59 / 82, Loss(batch): 0.09895455837249756
+2026-06-24 05:28:19,709 bp_v1_lr1e4_do01 INFO epoch: 31
+2026-06-24 05:28:19,711 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:28:29,662 bp_v1_lr1e4_do01 INFO Epoch: 31 / 50, Step: 29 / 82, Loss(batch): 0.10565635561943054
+2026-06-24 05:28:39,834 bp_v1_lr1e4_do01 INFO Epoch: 31 / 50, Step: 59 / 82, Loss(batch): 0.10845344513654709
+2026-06-24 05:28:47,176 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:28:49,526 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.1808287799358368
+2026-06-24 05:28:51,816 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.14728443324565887
+2026-06-24 05:36:37,653 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:36:37,654 bp_v1_lr1e4_do01 INFO epoch31, train_loss0.10277659037127727, valid_loss:0.1813937065502008
+2026-06-24 05:36:37,654 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.4521104422524748, auc0.864148927605947, recall0.3455763060172333, precision0.6536029048260343, aupr0.4962730040200064
+2026-06-24 05:36:37,654 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4521)
+2026-06-24 05:36:37,655 bp_v1_lr1e4_do01 INFO epoch: 32
+2026-06-24 05:36:37,656 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:36:47,931 bp_v1_lr1e4_do01 INFO Epoch: 32 / 50, Step: 29 / 82, Loss(batch): 0.11033309996128082
+2026-06-24 05:36:58,077 bp_v1_lr1e4_do01 INFO Epoch: 32 / 50, Step: 59 / 82, Loss(batch): 0.10342931002378464
+2026-06-24 05:37:05,272 bp_v1_lr1e4_do01 INFO epoch: 33
+2026-06-24 05:37:05,273 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:37:15,592 bp_v1_lr1e4_do01 INFO Epoch: 33 / 50, Step: 29 / 82, Loss(batch): 0.09553194046020508
+2026-06-24 05:37:25,958 bp_v1_lr1e4_do01 INFO Epoch: 33 / 50, Step: 59 / 82, Loss(batch): 0.10519232600927353
+2026-06-24 05:37:33,342 bp_v1_lr1e4_do01 INFO epoch: 34
+2026-06-24 05:37:33,344 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:37:43,253 bp_v1_lr1e4_do01 INFO Epoch: 34 / 50, Step: 29 / 82, Loss(batch): 0.09598823636770248
+2026-06-24 05:37:53,286 bp_v1_lr1e4_do01 INFO Epoch: 34 / 50, Step: 59 / 82, Loss(batch): 0.10702989995479584
+2026-06-24 05:38:00,545 bp_v1_lr1e4_do01 INFO epoch: 35
+2026-06-24 05:38:00,547 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:38:10,386 bp_v1_lr1e4_do01 INFO Epoch: 35 / 50, Step: 29 / 82, Loss(batch): 0.09926032274961472
+2026-06-24 05:38:20,480 bp_v1_lr1e4_do01 INFO Epoch: 35 / 50, Step: 59 / 82, Loss(batch): 0.10757401585578918
+2026-06-24 05:38:27,967 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:38:30,293 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.19794006645679474
+2026-06-24 05:38:32,609 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.18566672503948212
+2026-06-24 05:46:21,091 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:46:21,092 bp_v1_lr1e4_do01 INFO epoch35, train_loss0.09872606796462362, valid_loss:0.1836155727505684
+2026-06-24 05:46:21,092 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.45671429570406286, auc0.8624523871674802, recall0.3532014998017089, precision0.6460531522025851, aupr0.4958218025131887
+2026-06-24 05:46:21,092 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4567)
+2026-06-24 05:46:21,093 bp_v1_lr1e4_do01 INFO epoch: 36
+2026-06-24 05:46:21,094 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:46:31,246 bp_v1_lr1e4_do01 INFO Epoch: 36 / 50, Step: 29 / 82, Loss(batch): 0.09910780936479568
+2026-06-24 05:46:41,293 bp_v1_lr1e4_do01 INFO Epoch: 36 / 50, Step: 59 / 82, Loss(batch): 0.09082203358411789
+2026-06-24 05:46:48,655 bp_v1_lr1e4_do01 INFO epoch: 37
+2026-06-24 05:46:48,657 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:46:58,487 bp_v1_lr1e4_do01 INFO Epoch: 37 / 50, Step: 29 / 82, Loss(batch): 0.08588223904371262
+2026-06-24 05:47:08,547 bp_v1_lr1e4_do01 INFO Epoch: 37 / 50, Step: 59 / 82, Loss(batch): 0.10117881745100021
+2026-06-24 05:47:15,679 bp_v1_lr1e4_do01 INFO epoch: 38
+2026-06-24 05:47:15,681 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:47:25,222 bp_v1_lr1e4_do01 INFO Epoch: 38 / 50, Step: 29 / 82, Loss(batch): 0.09563617408275604
+2026-06-24 05:47:35,070 bp_v1_lr1e4_do01 INFO Epoch: 38 / 50, Step: 59 / 82, Loss(batch): 0.09710041433572769
+2026-06-24 05:47:42,361 bp_v1_lr1e4_do01 INFO epoch: 39
+2026-06-24 05:47:42,363 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:47:52,520 bp_v1_lr1e4_do01 INFO Epoch: 39 / 50, Step: 29 / 82, Loss(batch): 0.10787448287010193
+2026-06-24 05:48:02,387 bp_v1_lr1e4_do01 INFO Epoch: 39 / 50, Step: 59 / 82, Loss(batch): 0.09847592562437057
+2026-06-24 05:48:09,637 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:48:12,037 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.2099948525428772
+2026-06-24 05:48:14,361 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.20796380937099457
+2026-06-24 05:56:03,112 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 05:56:03,113 bp_v1_lr1e4_do01 INFO epoch39, train_loss0.09564519201110049, valid_loss:0.18854145457347235
+2026-06-24 05:56:03,113 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.46378734527474896, auc0.8606051635917767, recall0.36861412553628725, precision0.6252121138000092, aupr0.49550593447229013
+2026-06-24 05:56:03,114 bp_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.4638)
+2026-06-24 05:56:03,114 bp_v1_lr1e4_do01 INFO epoch: 40
+2026-06-24 05:56:03,115 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:56:13,167 bp_v1_lr1e4_do01 INFO Epoch: 40 / 50, Step: 29 / 82, Loss(batch): 0.09258012473583221
+2026-06-24 05:56:23,067 bp_v1_lr1e4_do01 INFO Epoch: 40 / 50, Step: 59 / 82, Loss(batch): 0.08358796685934067
+2026-06-24 05:56:30,366 bp_v1_lr1e4_do01 INFO epoch: 41
+2026-06-24 05:56:30,368 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:56:40,330 bp_v1_lr1e4_do01 INFO Epoch: 41 / 50, Step: 29 / 82, Loss(batch): 0.1017279326915741
+2026-06-24 05:56:50,064 bp_v1_lr1e4_do01 INFO Epoch: 41 / 50, Step: 59 / 82, Loss(batch): 0.10901616513729095
+2026-06-24 05:56:57,256 bp_v1_lr1e4_do01 INFO epoch: 42
+2026-06-24 05:56:57,258 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:57:07,165 bp_v1_lr1e4_do01 INFO Epoch: 42 / 50, Step: 29 / 82, Loss(batch): 0.08951316028833389
+2026-06-24 05:57:16,965 bp_v1_lr1e4_do01 INFO Epoch: 42 / 50, Step: 59 / 82, Loss(batch): 0.08463313430547714
+2026-06-24 05:57:24,163 bp_v1_lr1e4_do01 INFO epoch: 43
+2026-06-24 05:57:24,165 bp_v1_lr1e4_do01 INFO training
+2026-06-24 05:57:33,948 bp_v1_lr1e4_do01 INFO Epoch: 43 / 50, Step: 29 / 82, Loss(batch): 0.0847717896103859
+2026-06-24 05:57:43,812 bp_v1_lr1e4_do01 INFO Epoch: 43 / 50, Step: 59 / 82, Loss(batch): 0.08832662552595139
+2026-06-24 05:57:51,008 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 05:57:53,387 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.18198592960834503
+2026-06-24 05:57:55,643 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.1827293187379837
+2026-06-24 06:05:36,095 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:05:36,096 bp_v1_lr1e4_do01 INFO epoch43, train_loss0.09422628517921378, valid_loss:0.19236592886348566
+2026-06-24 06:05:36,096 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.45997909655782326, auc0.8578416206454476, recall0.3609709052889642, precision0.6338271136011142, aupr0.493192291101871
+2026-06-24 06:05:36,096 bp_v1_lr1e4_do01 INFO Early stopping counter: 1/3 (best fscore: 0.4638)
+2026-06-24 06:05:36,096 bp_v1_lr1e4_do01 INFO epoch: 44
+2026-06-24 06:05:36,098 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:05:46,265 bp_v1_lr1e4_do01 INFO Epoch: 44 / 50, Step: 29 / 82, Loss(batch): 0.08889492601156235
+2026-06-24 06:05:56,358 bp_v1_lr1e4_do01 INFO Epoch: 44 / 50, Step: 59 / 82, Loss(batch): 0.10125473886728287
+2026-06-24 06:06:03,642 bp_v1_lr1e4_do01 INFO epoch: 45
+2026-06-24 06:06:03,644 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:06:13,398 bp_v1_lr1e4_do01 INFO Epoch: 45 / 50, Step: 29 / 82, Loss(batch): 0.09180266410112381
+2026-06-24 06:06:23,256 bp_v1_lr1e4_do01 INFO Epoch: 45 / 50, Step: 59 / 82, Loss(batch): 0.09995368868112564
+2026-06-24 06:06:30,564 bp_v1_lr1e4_do01 INFO epoch: 46
+2026-06-24 06:06:30,566 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:06:40,113 bp_v1_lr1e4_do01 INFO Epoch: 46 / 50, Step: 29 / 82, Loss(batch): 0.0985310822725296
+2026-06-24 06:06:49,864 bp_v1_lr1e4_do01 INFO Epoch: 46 / 50, Step: 59 / 82, Loss(batch): 0.08638988435268402
+2026-06-24 06:06:57,343 bp_v1_lr1e4_do01 INFO epoch: 47
+2026-06-24 06:06:57,345 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:07:07,019 bp_v1_lr1e4_do01 INFO Epoch: 47 / 50, Step: 29 / 82, Loss(batch): 0.09614855796098709
+2026-06-24 06:07:16,902 bp_v1_lr1e4_do01 INFO Epoch: 47 / 50, Step: 59 / 82, Loss(batch): 0.08687052130699158
+2026-06-24 06:07:24,106 bp_v1_lr1e4_do01 INFO validating
+2026-06-24 06:07:26,660 bp_v1_lr1e4_do01 INFO Valid Step: 9 / 24, Loss(batch): 0.19078724086284637
+2026-06-24 06:07:29,134 bp_v1_lr1e4_do01 INFO Valid Step: 19 / 24, Loss(batch): 0.23078417778015137
+2026-06-24 06:15:10,280 bp_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:15:10,280 bp_v1_lr1e4_do01 INFO epoch47, train_loss0.09357408352377938, valid_loss:0.1923830695450306
+2026-06-24 06:15:10,280 bp_v1_lr1e4_do01 INFO threshold:0.01, f_score0.4618297684901807, auc0.8582623164316742, recall0.3638280996502866, precision0.6320915738870359, aupr0.4939440603307416
+2026-06-24 06:15:10,280 bp_v1_lr1e4_do01 INFO Early stopping counter: 2/3 (best fscore: 0.4638)
+2026-06-24 06:15:10,280 bp_v1_lr1e4_do01 INFO epoch: 48
+2026-06-24 06:15:10,282 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:15:20,185 bp_v1_lr1e4_do01 INFO Epoch: 48 / 50, Step: 29 / 82, Loss(batch): 0.0976392924785614
+2026-06-24 06:15:30,630 bp_v1_lr1e4_do01 INFO Epoch: 48 / 50, Step: 59 / 82, Loss(batch): 0.088053859770298
+2026-06-24 06:15:38,135 bp_v1_lr1e4_do01 INFO epoch: 49
+2026-06-24 06:15:38,136 bp_v1_lr1e4_do01 INFO training
+2026-06-24 06:15:48,208 bp_v1_lr1e4_do01 INFO Epoch: 49 / 50, Step: 29 / 82, Loss(batch): 0.08621936291456223
+2026-06-24 06:15:58,801 bp_v1_lr1e4_do01 INFO Epoch: 49 / 50, Step: 59 / 82, Loss(batch): 0.08207881450653076
+2026-06-24 06:16:06,163 bp_v1_lr1e4_do01 INFO best_fscore: 0.46378734527474896
+2026-06-24 06:16:06,164 bp_v1_lr1e4_do01 INFO best_scores[thresh,fmax,recall,precision,auc]: [0.01, 0.46378734527474896, 0.36861412553628725, 0.6252121138000092, 0.8606051635917767]
+2026-06-24 06:16:06,164 bp_v1_lr1e4_do01 INFO best_aupr: 0.49550593447229013
+2026-06-24 06:16:06,164 bp_v1_lr1e4_do01 INFO best_score_dict: {0.01: [0.46378734527474896, 0.36861412553628725, 0.6252121138000092, 0.8606051635917767]}

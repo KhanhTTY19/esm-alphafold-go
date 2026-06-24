@@ -24,3 +24,8 @@
 2026-06-04 07:23:14,766 mf INFO ROC curve saved to test_result/mf_transformer_v1_roc_curve.png
 2026-06-24 04:10:43,741 mf INFO #########mf###########
 2026-06-24 04:10:43,741 mf INFO ########start testing###########
+2026-06-24 07:18:06,138 mf INFO #########mf###########
+2026-06-24 07:18:06,138 mf INFO ########start testing###########
+2026-06-24 07:20:22,655 mf INFO loss: 0.10930688828229904, thresh: 0.28, f_score 0.7264388641961328
+2026-06-24 07:20:22,655 mf INFO auc 0.9438918714902991, recall 0.6514674520158424, precision 0.8209098470791477,aupr 0.7607841710423884
+2026-06-24 07:20:23,055 mf INFO ROC curve saved to test_result/mf_v4_lr1e4_do01_roc_curve.png

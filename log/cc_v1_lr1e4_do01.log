@@ -1,0 +1,215 @@
+2026-06-24 06:17:30,746 cc_v1_lr1e4_do01 INFO #########cc###########
+2026-06-24 06:17:30,747 cc_v1_lr1e4_do01 INFO ########start training###########
+2026-06-24 06:17:30,747 cc_v1_lr1e4_do01 INFO Early stopping: patience=3, min_delta=0.0001, monitor=fscore
+2026-06-24 06:17:30,747 cc_v1_lr1e4_do01 INFO epoch: 0
+2026-06-24 06:17:30,748 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:17:43,395 cc_v1_lr1e4_do01 INFO Epoch: 0 / 50, Step: 29 / 89, Loss(batch): 0.5301017165184021
+2026-06-24 06:17:54,921 cc_v1_lr1e4_do01 INFO Epoch: 0 / 50, Step: 59 / 89, Loss(batch): 0.16034573316574097
+2026-06-24 06:18:06,579 cc_v1_lr1e4_do01 INFO epoch: 1
+2026-06-24 06:18:06,581 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:18:17,560 cc_v1_lr1e4_do01 INFO Epoch: 1 / 50, Step: 29 / 89, Loss(batch): 0.130501851439476
+2026-06-24 06:18:28,044 cc_v1_lr1e4_do01 INFO Epoch: 1 / 50, Step: 59 / 89, Loss(batch): 0.15516085922718048
+2026-06-24 06:18:38,116 cc_v1_lr1e4_do01 INFO epoch: 2
+2026-06-24 06:18:38,118 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:18:48,419 cc_v1_lr1e4_do01 INFO Epoch: 2 / 50, Step: 29 / 89, Loss(batch): 0.14303453266620636
+2026-06-24 06:18:58,822 cc_v1_lr1e4_do01 INFO Epoch: 2 / 50, Step: 59 / 89, Loss(batch): 0.13678568601608276
+2026-06-24 06:19:09,151 cc_v1_lr1e4_do01 INFO epoch: 3
+2026-06-24 06:19:09,153 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:19:19,372 cc_v1_lr1e4_do01 INFO Epoch: 3 / 50, Step: 29 / 89, Loss(batch): 0.13066332042217255
+2026-06-24 06:19:29,525 cc_v1_lr1e4_do01 INFO Epoch: 3 / 50, Step: 59 / 89, Loss(batch): 0.1482921689748764
+2026-06-24 06:19:39,452 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:19:42,745 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.14097872376441956
+2026-06-24 06:19:45,302 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.13851726055145264
+2026-06-24 06:24:06,998 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:24:06,998 cc_v1_lr1e4_do01 INFO epoch3, train_loss0.1429919610532482, valid_loss:0.1394871289913471
+2026-06-24 06:24:06,998 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.5258776160718031, auc0.900840772565206, recall0.3974986922820866, precision0.7767384234164473, aupr0.613368863101632
+2026-06-24 06:24:06,998 cc_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.5259)
+2026-06-24 06:24:06,998 cc_v1_lr1e4_do01 INFO epoch: 4
+2026-06-24 06:24:06,999 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:24:17,932 cc_v1_lr1e4_do01 INFO Epoch: 4 / 50, Step: 29 / 89, Loss(batch): 0.1534893810749054
+2026-06-24 06:24:28,299 cc_v1_lr1e4_do01 INFO Epoch: 4 / 50, Step: 59 / 89, Loss(batch): 0.14093054831027985
+2026-06-24 06:24:38,126 cc_v1_lr1e4_do01 INFO epoch: 5
+2026-06-24 06:24:38,128 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:24:48,440 cc_v1_lr1e4_do01 INFO Epoch: 5 / 50, Step: 29 / 89, Loss(batch): 0.13918954133987427
+2026-06-24 06:24:58,668 cc_v1_lr1e4_do01 INFO Epoch: 5 / 50, Step: 59 / 89, Loss(batch): 0.12440268695354462
+2026-06-24 06:25:08,678 cc_v1_lr1e4_do01 INFO epoch: 6
+2026-06-24 06:25:08,679 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:25:18,970 cc_v1_lr1e4_do01 INFO Epoch: 6 / 50, Step: 29 / 89, Loss(batch): 0.13320274651050568
+2026-06-24 06:25:29,313 cc_v1_lr1e4_do01 INFO Epoch: 6 / 50, Step: 59 / 89, Loss(batch): 0.12796704471111298
+2026-06-24 06:25:39,347 cc_v1_lr1e4_do01 INFO epoch: 7
+2026-06-24 06:25:39,348 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:25:49,283 cc_v1_lr1e4_do01 INFO Epoch: 7 / 50, Step: 29 / 89, Loss(batch): 0.1190405786037445
+2026-06-24 06:25:59,553 cc_v1_lr1e4_do01 INFO Epoch: 7 / 50, Step: 59 / 89, Loss(batch): 0.10863073915243149
+2026-06-24 06:26:09,383 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:26:11,788 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.11595083773136139
+2026-06-24 06:26:14,190 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.11749465763568878
+2026-06-24 06:30:38,956 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:30:38,957 cc_v1_lr1e4_do01 INFO epoch7, train_loss0.11490762409534347, valid_loss:0.11336584188617192
+2026-06-24 06:30:38,957 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.629344453064391, auc0.9421885985407438, recall0.5143531947944902, precision0.8105562910598756, aupr0.7158796445481472
+2026-06-24 06:30:38,957 cc_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.6293)
+2026-06-24 06:30:38,958 cc_v1_lr1e4_do01 INFO epoch: 8
+2026-06-24 06:30:38,959 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:30:49,331 cc_v1_lr1e4_do01 INFO Epoch: 8 / 50, Step: 29 / 89, Loss(batch): 0.11554538458585739
+2026-06-24 06:30:59,588 cc_v1_lr1e4_do01 INFO Epoch: 8 / 50, Step: 59 / 89, Loss(batch): 0.10423394292593002
+2026-06-24 06:31:09,252 cc_v1_lr1e4_do01 INFO epoch: 9
+2026-06-24 06:31:09,254 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:31:19,503 cc_v1_lr1e4_do01 INFO Epoch: 9 / 50, Step: 29 / 89, Loss(batch): 0.10540052503347397
+2026-06-24 06:31:29,874 cc_v1_lr1e4_do01 INFO Epoch: 9 / 50, Step: 59 / 89, Loss(batch): 0.10157345980405807
+2026-06-24 06:31:39,811 cc_v1_lr1e4_do01 INFO epoch: 10
+2026-06-24 06:31:39,812 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:31:50,066 cc_v1_lr1e4_do01 INFO Epoch: 10 / 50, Step: 29 / 89, Loss(batch): 0.09864050894975662
+2026-06-24 06:32:00,425 cc_v1_lr1e4_do01 INFO Epoch: 10 / 50, Step: 59 / 89, Loss(batch): 0.10834429413080215
+2026-06-24 06:32:10,268 cc_v1_lr1e4_do01 INFO epoch: 11
+2026-06-24 06:32:10,269 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:32:20,576 cc_v1_lr1e4_do01 INFO Epoch: 11 / 50, Step: 29 / 89, Loss(batch): 0.10378064960241318
+2026-06-24 06:32:30,755 cc_v1_lr1e4_do01 INFO Epoch: 11 / 50, Step: 59 / 89, Loss(batch): 0.10142483562231064
+2026-06-24 06:32:40,583 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:32:43,490 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.11785683035850525
+2026-06-24 06:32:45,848 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.10799838602542877
+2026-06-24 06:37:10,281 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:37:10,282 cc_v1_lr1e4_do01 INFO epoch11, train_loss0.09802269224035606, valid_loss:0.11220214974421722
+2026-06-24 06:37:10,282 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.6514906422548957, auc0.9460590547497608, recall0.5713696958168878, precision0.7577464788732394, aupr0.7231357412084133
+2026-06-24 06:37:10,282 cc_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.6515)
+2026-06-24 06:37:10,282 cc_v1_lr1e4_do01 INFO epoch: 12
+2026-06-24 06:37:10,285 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:37:20,973 cc_v1_lr1e4_do01 INFO Epoch: 12 / 50, Step: 29 / 89, Loss(batch): 0.0897737517952919
+2026-06-24 06:37:31,357 cc_v1_lr1e4_do01 INFO Epoch: 12 / 50, Step: 59 / 89, Loss(batch): 0.08170884847640991
+2026-06-24 06:37:41,528 cc_v1_lr1e4_do01 INFO epoch: 13
+2026-06-24 06:37:41,529 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:37:51,666 cc_v1_lr1e4_do01 INFO Epoch: 13 / 50, Step: 29 / 89, Loss(batch): 0.09061413258314133
+2026-06-24 06:38:01,864 cc_v1_lr1e4_do01 INFO Epoch: 13 / 50, Step: 59 / 89, Loss(batch): 0.09140998870134354
+2026-06-24 06:38:12,018 cc_v1_lr1e4_do01 INFO epoch: 14
+2026-06-24 06:38:12,019 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:38:22,464 cc_v1_lr1e4_do01 INFO Epoch: 14 / 50, Step: 29 / 89, Loss(batch): 0.08334366232156754
+2026-06-24 06:38:32,742 cc_v1_lr1e4_do01 INFO Epoch: 14 / 50, Step: 59 / 89, Loss(batch): 0.08092031627893448
+2026-06-24 06:38:42,655 cc_v1_lr1e4_do01 INFO epoch: 15
+2026-06-24 06:38:42,657 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:38:52,841 cc_v1_lr1e4_do01 INFO Epoch: 15 / 50, Step: 29 / 89, Loss(batch): 0.08444464206695557
+2026-06-24 06:39:03,310 cc_v1_lr1e4_do01 INFO Epoch: 15 / 50, Step: 59 / 89, Loss(batch): 0.06982814520597458
+2026-06-24 06:39:13,301 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:39:15,638 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.12692029774188995
+2026-06-24 06:39:17,947 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.10090050846338272
+2026-06-24 06:43:45,515 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:43:45,516 cc_v1_lr1e4_do01 INFO epoch15, train_loss0.08510598866792207, valid_loss:0.11506150892147651
+2026-06-24 06:43:45,516 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.6458489154824233, auc0.9453831114402733, recall0.5474978997257756, precision0.7872723542953525, aupr0.7254258988129701
+2026-06-24 06:43:45,516 cc_v1_lr1e4_do01 INFO Early stopping counter: 1/3 (best fscore: 0.6515)
+2026-06-24 06:43:45,516 cc_v1_lr1e4_do01 INFO epoch: 16
+2026-06-24 06:43:45,517 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:43:56,156 cc_v1_lr1e4_do01 INFO Epoch: 16 / 50, Step: 29 / 89, Loss(batch): 0.07391835749149323
+2026-06-24 06:44:06,704 cc_v1_lr1e4_do01 INFO Epoch: 16 / 50, Step: 59 / 89, Loss(batch): 0.08581297099590302
+2026-06-24 06:44:17,980 cc_v1_lr1e4_do01 INFO epoch: 17
+2026-06-24 06:44:17,982 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:44:28,469 cc_v1_lr1e4_do01 INFO Epoch: 17 / 50, Step: 29 / 89, Loss(batch): 0.08594008535146713
+2026-06-24 06:44:38,941 cc_v1_lr1e4_do01 INFO Epoch: 17 / 50, Step: 59 / 89, Loss(batch): 0.07586222887039185
+2026-06-24 06:44:48,914 cc_v1_lr1e4_do01 INFO epoch: 18
+2026-06-24 06:44:48,916 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:44:59,676 cc_v1_lr1e4_do01 INFO Epoch: 18 / 50, Step: 29 / 89, Loss(batch): 0.0726078525185585
+2026-06-24 06:45:10,358 cc_v1_lr1e4_do01 INFO Epoch: 18 / 50, Step: 59 / 89, Loss(batch): 0.07479807734489441
+2026-06-24 06:45:20,330 cc_v1_lr1e4_do01 INFO epoch: 19
+2026-06-24 06:45:20,332 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:45:30,771 cc_v1_lr1e4_do01 INFO Epoch: 19 / 50, Step: 29 / 89, Loss(batch): 0.07348780333995819
+2026-06-24 06:45:41,160 cc_v1_lr1e4_do01 INFO Epoch: 19 / 50, Step: 59 / 89, Loss(batch): 0.07137583196163177
+2026-06-24 06:45:51,470 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:45:53,952 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.10995576530694962
+2026-06-24 06:45:56,340 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.1265362650156021
+2026-06-24 06:50:33,384 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:50:33,384 cc_v1_lr1e4_do01 INFO epoch19, train_loss0.07276267596007732, valid_loss:0.12463404094943634
+2026-06-24 06:50:33,384 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.6467270896273918, auc0.9406006370744767, recall0.5598776293055622, precision0.7654682183646491, aupr0.715043055880138
+2026-06-24 06:50:33,384 cc_v1_lr1e4_do01 INFO Early stopping counter: 2/3 (best fscore: 0.6515)
+2026-06-24 06:50:33,384 cc_v1_lr1e4_do01 INFO epoch: 20
+2026-06-24 06:50:33,385 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:50:44,259 cc_v1_lr1e4_do01 INFO Epoch: 20 / 50, Step: 29 / 89, Loss(batch): 0.07173198461532593
+2026-06-24 06:50:55,058 cc_v1_lr1e4_do01 INFO Epoch: 20 / 50, Step: 59 / 89, Loss(batch): 0.06578705459833145
+2026-06-24 06:51:04,900 cc_v1_lr1e4_do01 INFO epoch: 21
+2026-06-24 06:51:04,901 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:51:15,353 cc_v1_lr1e4_do01 INFO Epoch: 21 / 50, Step: 29 / 89, Loss(batch): 0.0652805045247078
+2026-06-24 06:51:25,705 cc_v1_lr1e4_do01 INFO Epoch: 21 / 50, Step: 59 / 89, Loss(batch): 0.06291411817073822
+2026-06-24 06:51:35,924 cc_v1_lr1e4_do01 INFO epoch: 22
+2026-06-24 06:51:35,925 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:51:46,227 cc_v1_lr1e4_do01 INFO Epoch: 22 / 50, Step: 29 / 89, Loss(batch): 0.05749557167291641
+2026-06-24 06:51:56,708 cc_v1_lr1e4_do01 INFO Epoch: 22 / 50, Step: 59 / 89, Loss(batch): 0.06151740625500679
+2026-06-24 06:52:06,613 cc_v1_lr1e4_do01 INFO epoch: 23
+2026-06-24 06:52:06,615 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:52:16,585 cc_v1_lr1e4_do01 INFO Epoch: 23 / 50, Step: 29 / 89, Loss(batch): 0.06462796777486801
+2026-06-24 06:52:27,291 cc_v1_lr1e4_do01 INFO Epoch: 23 / 50, Step: 59 / 89, Loss(batch): 0.05712918937206268
+2026-06-24 06:52:37,729 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:52:40,151 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.13395199179649353
+2026-06-24 06:52:42,623 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.1263449341058731
+2026-06-24 06:57:17,189 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 06:57:17,190 cc_v1_lr1e4_do01 INFO epoch23, train_loss0.061524203235513705, valid_loss:0.1384063113767367
+2026-06-24 06:57:17,190 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.6519873274417054, auc0.9366413709412545, recall0.5888059346616578, precision0.730357845064884, aupr0.7074428121391624
+2026-06-24 06:57:17,190 cc_v1_lr1e4_do01 INFO Early stopping counter: 0/3 (best fscore: 0.6520)
+2026-06-24 06:57:17,190 cc_v1_lr1e4_do01 INFO epoch: 24
+2026-06-24 06:57:17,192 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:57:28,389 cc_v1_lr1e4_do01 INFO Epoch: 24 / 50, Step: 29 / 89, Loss(batch): 0.05809731036424637
+2026-06-24 06:57:39,139 cc_v1_lr1e4_do01 INFO Epoch: 24 / 50, Step: 59 / 89, Loss(batch): 0.052091918885707855
+2026-06-24 06:57:49,341 cc_v1_lr1e4_do01 INFO epoch: 25
+2026-06-24 06:57:49,342 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:57:59,480 cc_v1_lr1e4_do01 INFO Epoch: 25 / 50, Step: 29 / 89, Loss(batch): 0.057876572012901306
+2026-06-24 06:58:09,878 cc_v1_lr1e4_do01 INFO Epoch: 25 / 50, Step: 59 / 89, Loss(batch): 0.051432423293590546
+2026-06-24 06:58:19,796 cc_v1_lr1e4_do01 INFO epoch: 26
+2026-06-24 06:58:19,798 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:58:30,772 cc_v1_lr1e4_do01 INFO Epoch: 26 / 50, Step: 29 / 89, Loss(batch): 0.05378927290439606
+2026-06-24 06:58:41,104 cc_v1_lr1e4_do01 INFO Epoch: 26 / 50, Step: 59 / 89, Loss(batch): 0.06371932476758957
+2026-06-24 06:58:51,429 cc_v1_lr1e4_do01 INFO epoch: 27
+2026-06-24 06:58:51,431 cc_v1_lr1e4_do01 INFO training
+2026-06-24 06:59:01,913 cc_v1_lr1e4_do01 INFO Epoch: 27 / 50, Step: 29 / 89, Loss(batch): 0.0479617565870285
+2026-06-24 06:59:12,632 cc_v1_lr1e4_do01 INFO Epoch: 27 / 50, Step: 59 / 89, Loss(batch): 0.046329982578754425
+2026-06-24 06:59:22,903 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 06:59:25,332 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.16042529046535492
+2026-06-24 06:59:27,839 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.13825556635856628
+2026-06-24 07:03:57,757 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 07:03:57,758 cc_v1_lr1e4_do01 INFO epoch27, train_loss0.05142858637015471, valid_loss:0.1547663819331389
+2026-06-24 07:03:57,758 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.647338092371205, auc0.9296803979802617, recall0.596525433132024, precision0.7076133350882801, aupr0.6950025657539224
+2026-06-24 07:03:57,758 cc_v1_lr1e4_do01 INFO Early stopping counter: 1/3 (best fscore: 0.6520)
+2026-06-24 07:03:57,758 cc_v1_lr1e4_do01 INFO epoch: 28
+2026-06-24 07:03:57,759 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:04:08,436 cc_v1_lr1e4_do01 INFO Epoch: 28 / 50, Step: 29 / 89, Loss(batch): 0.049229491502046585
+2026-06-24 07:04:18,892 cc_v1_lr1e4_do01 INFO Epoch: 28 / 50, Step: 59 / 89, Loss(batch): 0.05319357290863991
+2026-06-24 07:04:29,144 cc_v1_lr1e4_do01 INFO epoch: 29
+2026-06-24 07:04:29,146 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:04:39,346 cc_v1_lr1e4_do01 INFO Epoch: 29 / 50, Step: 29 / 89, Loss(batch): 0.047029126435518265
+2026-06-24 07:04:49,824 cc_v1_lr1e4_do01 INFO Epoch: 29 / 50, Step: 59 / 89, Loss(batch): 0.05095415562391281
+2026-06-24 07:05:00,048 cc_v1_lr1e4_do01 INFO epoch: 30
+2026-06-24 07:05:00,050 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:05:10,404 cc_v1_lr1e4_do01 INFO Epoch: 30 / 50, Step: 29 / 89, Loss(batch): 0.0463070273399353
+2026-06-24 07:05:20,978 cc_v1_lr1e4_do01 INFO Epoch: 30 / 50, Step: 59 / 89, Loss(batch): 0.04531991481781006
+2026-06-24 07:05:31,283 cc_v1_lr1e4_do01 INFO epoch: 31
+2026-06-24 07:05:31,284 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:05:41,656 cc_v1_lr1e4_do01 INFO Epoch: 31 / 50, Step: 29 / 89, Loss(batch): 0.04719097912311554
+2026-06-24 07:05:51,883 cc_v1_lr1e4_do01 INFO Epoch: 31 / 50, Step: 59 / 89, Loss(batch): 0.048506539314985275
+2026-06-24 07:06:01,899 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 07:06:04,225 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.19337399303913116
+2026-06-24 07:06:06,517 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.16733184456825256
+2026-06-24 07:10:34,112 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 07:10:34,112 cc_v1_lr1e4_do01 INFO epoch31, train_loss0.043550321434655884, valid_loss:0.1718044217962485
+2026-06-24 07:10:34,113 cc_v1_lr1e4_do01 INFO threshold:0.11, f_score0.6500257510729613, auc0.9276314229532344, recall0.6001870432894257, precision0.7088910939284444, aupr0.6935293216961468
+2026-06-24 07:10:34,113 cc_v1_lr1e4_do01 INFO Early stopping counter: 2/3 (best fscore: 0.6520)
+2026-06-24 07:10:34,113 cc_v1_lr1e4_do01 INFO epoch: 32
+2026-06-24 07:10:34,114 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:10:44,991 cc_v1_lr1e4_do01 INFO Epoch: 32 / 50, Step: 29 / 89, Loss(batch): 0.04147705063223839
+2026-06-24 07:10:55,802 cc_v1_lr1e4_do01 INFO Epoch: 32 / 50, Step: 59 / 89, Loss(batch): 0.03565245121717453
+2026-06-24 07:11:06,465 cc_v1_lr1e4_do01 INFO epoch: 33
+2026-06-24 07:11:06,467 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:11:17,684 cc_v1_lr1e4_do01 INFO Epoch: 33 / 50, Step: 29 / 89, Loss(batch): 0.040257833898067474
+2026-06-24 07:11:28,961 cc_v1_lr1e4_do01 INFO Epoch: 33 / 50, Step: 59 / 89, Loss(batch): 0.03403955325484276
+2026-06-24 07:11:40,266 cc_v1_lr1e4_do01 INFO epoch: 34
+2026-06-24 07:11:40,269 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:11:52,473 cc_v1_lr1e4_do01 INFO Epoch: 34 / 50, Step: 29 / 89, Loss(batch): 0.04023880511522293
+2026-06-24 07:12:03,192 cc_v1_lr1e4_do01 INFO Epoch: 34 / 50, Step: 59 / 89, Loss(batch): 0.03541772812604904
+2026-06-24 07:12:12,678 cc_v1_lr1e4_do01 INFO epoch: 35
+2026-06-24 07:12:12,679 cc_v1_lr1e4_do01 INFO training
+2026-06-24 07:12:23,302 cc_v1_lr1e4_do01 INFO Epoch: 35 / 50, Step: 29 / 89, Loss(batch): 0.037395671010017395
+2026-06-24 07:12:33,917 cc_v1_lr1e4_do01 INFO Epoch: 35 / 50, Step: 59 / 89, Loss(batch): 0.041539549827575684
+2026-06-24 07:12:43,840 cc_v1_lr1e4_do01 INFO validating
+2026-06-24 07:12:46,294 cc_v1_lr1e4_do01 INFO Valid Step: 9 / 26, Loss(batch): 0.20692940056324005
+2026-06-24 07:12:48,723 cc_v1_lr1e4_do01 INFO Valid Step: 19 / 26, Loss(batch): 0.19861315190792084
+2026-06-24 07:17:18,447 cc_v1_lr1e4_do01 INFO ########valid metric###########
+2026-06-24 07:17:18,447 cc_v1_lr1e4_do01 INFO epoch35, train_loss0.037795115032055404, valid_loss:0.19273661363583344
+2026-06-24 07:17:18,447 cc_v1_lr1e4_do01 INFO threshold:0.01, f_score0.6432680341493555, auc0.9203558569607551, recall0.5858259229318243, precision0.7131995368583558, aupr0.6819887181821481
+2026-06-24 07:17:18,447 cc_v1_lr1e4_do01 INFO Early stopping counter: 3/3 (best fscore: 0.6520)
+2026-06-24 07:17:18,448 cc_v1_lr1e4_do01 INFO Early stopping triggered at epoch 35. No improvement in fscore for 3 validations.
+2026-06-24 07:17:18,448 cc_v1_lr1e4_do01 INFO best_fscore: 0.6519873274417054
+2026-06-24 07:17:18,448 cc_v1_lr1e4_do01 INFO best_scores[thresh,fmax,recall,precision,auc]: [0.01, 0.6519873274417054, 0.5888059346616578, 0.730357845064884, 0.9366413709412545]
+2026-06-24 07:17:18,448 cc_v1_lr1e4_do01 INFO best_aupr: 0.7074428121391624
+2026-06-24 07:17:18,448 cc_v1_lr1e4_do01 INFO best_score_dict: {0.01: [0.6519873274417054, 0.5888059346616578, 0.730357845064884, 0.9366413709412545]}
