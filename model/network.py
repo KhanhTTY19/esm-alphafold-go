@@ -2,7 +2,7 @@ import torch
 import torch.nn
 import torch.nn.functional as F
 import dgl
-from dgl.nn import GraphConv,GATConv, AvgPooling, MaxPooling
+from dgl.nn import AvgPooling, MaxPooling, SAGEConv
 from model.layer import ConvPoolBlock, SAGPool
 
 
@@ -188,7 +188,7 @@ class SAGNetworkGlobal(torch.nn.Module):
         for i in range(num_convs):
             _i_dim = in_dim if i == 0 else hid_dim
             _o_dim = hid_dim
-            convs.append(GraphConv(_i_dim, _o_dim))
+            convs.append(SAGEConv(_i_dim, _o_dim, "mean"))
         self.convs = torch.nn.ModuleList(convs)
 
         concat_dim = num_convs * hid_dim

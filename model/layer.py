@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 import dgl
-from dgl.nn import GraphConv, AvgPooling, MaxPooling, GATConv,SumPooling,SAGEConv,ChebConv
+from dgl.nn import AvgPooling, MaxPooling, SumPooling, SAGEConv
 from model.utils import topk, get_batch_id
 
 class SAGPool(torch.nn.Module):
@@ -11,17 +11,15 @@ class SAGPool(torch.nn.Module):
         in_dim (int): The dimension of node feature.
         ratio (float, optional): The pool ratio which determines the amount of nodes
             remain after pooling. (default: :obj:`0.5`)
-        conv_op (torch.nn.Module, optional): The graph convolution layer in dgl used to
-        compute scale for each node. (default: :obj:`dgl.nn.GraphConv`)
         non_linearity (Callable, optional): The non-linearity function, a pytorch function.
             (default: :obj:`torch.tanh`)
     """
-    def __init__(self, in_dim:int, ratio=0.5, conv_op=GraphConv, non_linearity=torch.tanh):
+    def __init__(self, in_dim:int, ratio=0.5, non_linearity=torch.tanh):
         super(SAGPool, self).__init__()
         self.in_dim = in_dim
         self.ratio = ratio
-        self.score_layer1 = GraphConv(in_dim, 1)
-        self.score_layer2 = GraphConv(in_dim, 1)
+        self.score_layer1 = SAGEConv(in_dim, 1, "mean")
+        self.score_layer2 = SAGEConv(in_dim, 1, "mean")
         self.non_linearity = non_linearity
         self.allow_zero_in_degree = True 
     
@@ -45,13 +43,13 @@ class SAGPool(torch.nn.Module):
 
 
 class ConvPoolBlock(torch.nn.Module):
-    """A combination of GCN layer and SAGPool layer,
+    """A combination of GraphSAGE layer and SAGPool layer,
     followed by a concatenated (max||sum) readout operation.
     """
     def __init__(self, in_dim:int, out_dim:int, pool_ratio=0.5):
         super(ConvPoolBlock, self).__init__()
-        self.conv1 = GraphConv(in_dim, out_dim)
-        self.conv2 = GraphConv(out_dim, out_dim)
+        self.conv1 = SAGEConv(in_dim, out_dim, "mean")
+        self.conv2 = SAGEConv(out_dim, out_dim, "mean")
         self.pool = SAGPool(out_dim, ratio=pool_ratio)
         self.avgpool = AvgPooling()
         self.maxpool = MaxPooling()
@@ -67,4 +65,4 @@ class ConvPoolBlock(torch.nn.Module):
         out = torch.reshape(out,(-1,512))
         graph, out, _ = self.pool(graph, out)
         g_out = torch.cat([self.maxpool(graph, out), self.sumpool(graph, out)], dim=-1)
-        return graph, out, g_out 
+        return graph, out, g_out
